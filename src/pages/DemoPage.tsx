@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, Users, CheckCircle, ExternalLink, Play } from 'lucide-react';
+import Breadcrumbs from '../components/ui/Breadcrumbs';
 
 const DemoPage: React.FC = () => {
   return (
@@ -15,6 +16,8 @@ const DemoPage: React.FC = () => {
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
+            <Breadcrumbs items={[{ label: 'Demo' }]} />
+
             {/* Header */}
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 bg-mint/10 border border-mint/20 rounded-full px-6 py-2 mb-8">

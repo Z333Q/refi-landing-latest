@@ -8,6 +8,7 @@ import type { BlogPost } from '../lib/types';
 import { getFaqSchema } from '../components/SeoFaq';
 import LocalizedDate from '../components/ui/LocalizedDate';
 import { getImageUrl } from '../lib/imageUrls';
+import Breadcrumbs from '../components/ui/Breadcrumbs';
 
 const BlogPage: React.FC = () => {
   const { t } = useTranslation();
@@ -114,6 +115,10 @@ const BlogPage: React.FC = () => {
 
       <main className="min-h-screen bg-charcoal pt-24 pb-16" role="main">
         <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-7xl mx-auto mb-8">
+            <Breadcrumbs items={[{ label: 'Blog' }]} />
+          </div>
+
           <header className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               {t('blog.title')}

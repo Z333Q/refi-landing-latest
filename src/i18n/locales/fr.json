@@ -1,10 +1,12 @@
 {
   "nav": {
     "howItWorks": "Comment Ça Marche",
-    "value": "Valeur",
+    "technology": "Technologie",
+    "pricing": "Tarifs",
     "roadmap": "Feuille de Route",
-    "blog": "Blog",
     "team": "Équipe",
+    "faq": "FAQ",
+    "blog": "Blog",
     "analyzer": "Analyseur",
     "getStarted": "Commencer",
     "joinWaitlist": "Rejoindre la Liste d'Attente",

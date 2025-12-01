@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Pricing: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-charcoal">
+    <section id="pricing" className="py-24 px-6 bg-charcoal">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-display font-bold text-white text-center mb-16">Pricing Paths</h2>
 

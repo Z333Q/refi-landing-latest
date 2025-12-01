@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 import { imageUrls } from '../lib/imageUrls';
+import { handleNavigation, observeSections } from '../lib/navigation';
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,21 +23,43 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const sectionIds = ['how-it-works', 'technology', 'pricing', 'roadmap', 'team', 'faq'];
+      return observeSections(sectionIds, setActiveSection);
+    }
+  }, [location.pathname]);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const navLinks = [
-    { title: t('nav.howItWorks'), href: '#how-it-works' },
-    { title: t('nav.value'), href: '#value-context' },
-    { title: t('nav.roadmap'), href: '#roadmap' },
+    { title: t('nav.howItWorks'), href: '#how-it-works', sectionId: 'how-it-works' },
+    { title: t('nav.technology'), href: '#technology', sectionId: 'technology' },
+    { title: t('nav.pricing'), href: '#pricing', sectionId: 'pricing' },
+    { title: t('nav.roadmap'), href: '#roadmap', sectionId: 'roadmap' },
+    { title: t('nav.team'), href: '#team', sectionId: 'team' },
+    { title: t('nav.faq'), href: '#faq', sectionId: 'faq' },
     { title: t('nav.blog'), href: '/blog', isRoute: true },
-    { title: t('nav.team'), href: '#team' },
     { title: t('nav.analyzer'), href: '/analyzer/index.html', isExternal: true }
   ];
 
-  const isActiveRoute = (href: string) => {
-    return location.pathname === href;
+  const isActiveLink = (link: typeof navLinks[0]) => {
+    if (link.isRoute) {
+      return location.pathname === link.href;
+    }
+    if (link.sectionId && location.pathname === '/') {
+      return activeSection === link.sectionId;
+    }
+    return false;
+  };
+
+  const onNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: typeof navLinks[0]) => {
+    if (link.isRoute || link.isExternal) return;
+
+    e.preventDefault();
+    handleNavigation(link.href, location.pathname, navigate, () => setIsMenuOpen(false));
   };
 
   return (
@@ -67,11 +92,11 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav 
+          <nav
             className="hidden md:flex items-center space-x-8"
             role="navigation"
             aria-label="Main navigation"
-            itemScope 
+            itemScope
             itemType="https://schema.org/SiteNavigationElement"
           >
             {navLinks.map((link) => (
@@ -80,8 +105,8 @@ const Header: React.FC = () => {
                   key={link.title}
                   to={link.href}
                   className={`transition-colors duration-200 font-medium whitespace-nowrap ${
-                    isActiveRoute(link.href) 
-                      ? 'text-mint' 
+                    isActiveLink(link)
+                      ? 'text-mint'
                       : 'text-gray-300 hover:text-mint'
                   }`}
                   itemProp="url"
@@ -102,7 +127,12 @@ const Header: React.FC = () => {
                 <a
                   key={link.title}
                   href={link.href}
-                  className="text-gray-300 hover:text-mint transition-colors duration-200 font-medium whitespace-nowrap"
+                  onClick={(e) => onNavClick(e, link)}
+                  className={`transition-colors duration-200 font-medium whitespace-nowrap cursor-pointer ${
+                    isActiveLink(link)
+                      ? 'text-mint'
+                      : 'text-gray-300 hover:text-mint'
+                  }`}
                   itemProp="url"
                 >
                   {link.title}
@@ -190,7 +220,7 @@ const Header: React.FC = () => {
             aria-modal="true"
             aria-label="Mobile navigation menu"
           >
-            <nav 
+            <nav
               className="flex flex-col items-center space-y-6 max-h-screen overflow-y-auto py-8"
               role="navigation"
               aria-label="Mobile navigation"
@@ -201,8 +231,8 @@ const Header: React.FC = () => {
                     key={link.title}
                     to={link.href}
                     className={`text-xl transition-colors duration-200 font-medium ${
-                      isActiveRoute(link.href) 
-                        ? 'text-mint' 
+                      isActiveLink(link)
+                        ? 'text-mint'
                         : 'text-gray-300 hover:text-mint'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
@@ -223,8 +253,12 @@ const Header: React.FC = () => {
                   <a
                     key={link.title}
                     href={link.href}
-                    className="text-xl text-gray-300 hover:text-mint transition-colors duration-200 font-medium"
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => onNavClick(e, link)}
+                    className={`text-xl transition-colors duration-200 font-medium cursor-pointer ${
+                      isActiveLink(link)
+                        ? 'text-mint'
+                        : 'text-gray-300 hover:text-mint'
+                    }`}
                   >
                     {link.title}
                   </a>

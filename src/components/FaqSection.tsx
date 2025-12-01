@@ -30,9 +30,10 @@ const FaqSection: React.FC = () => {
   };
 
   return (
-    <section 
+    <section
+      id="faq"
       className="py-16 bg-charcoal relative overflow-hidden"
-      itemScope 
+      itemScope
       itemType="https://schema.org/FAQPage"
     >
       <div className="absolute inset-0 pointer-events-none">

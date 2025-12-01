@@ -29,7 +29,7 @@ const UserSegments: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'POWER_TRADERS' | 'LEAN_FUNDS' | 'FAMILY_OFFICES'>('POWER_TRADERS');
 
   return (
-    <section className="py-24 px-6 max-w-6xl mx-auto">
+    <section id="technology" className="py-24 px-6 max-w-6xl mx-auto">
       <h2 className="text-3xl font-display font-bold text-white mb-12">User Segments</h2>
 
       <div className="flex flex-col md:flex-row gap-2 mb-12 p-1 bg-charcoal-light rounded-lg border border-gray-700 inline-flex">
