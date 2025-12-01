@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "Como Funciona",
+    "value": "Valor",
+    "roadmap": "Roteiro",
+    "blog": "Blog",
+    "team": "Equipe",
+    "analyzer": "Analisador",
+    "getStarted": "Começar",
+    "joinWaitlist": "Entrar na Lista de Espera",
+    "bookDemo": "Agendar Demo",
+    "partners": "Parceiros",
+    "careers": "Carreiras"
+  },
+  "hero": {
+    "badge": "OpenFi para Agentes de Negociação. Ordens pré-verificadas. Limites aplicados",
+    "title": "IA de Wall Street, Radicalmente Acessível",
+    "subtitle": "Execute negociações do seu corretor. Aplique controles de risco com provas de conhecimento zero. Autocustódia completa.",
+    "requestAccess": "Solicitar Acesso Antecipado",
+    "watchDemo": "Assistir demo de 2 minutos"
+  },
+  "howItWorks": {
+    "title": "Como o ReFi.Trading funciona em 90 segundos",
+    "steps": {
+      "connect": {
+        "title": "Conecte seu corretor",
+        "description": "Os ativos permanecem sob seu controle."
+      },
+      "setRisk": {
+        "title": "Defina limites de risco",
+        "description": "Cada ordem passa por uma verificação de conhecimento zero."
+      },
+      "launch": {
+        "title": "Lance seu agente",
+        "description": "Pare ou retome com um clique."
+      }
+    },
+    "proofPoints": {
+      "title": "Construído sobre Tecnologia Comprovada",
+      "zkVerified": "aplicação de risco verificada por zk",
+      "selfCustodied": "execução autocustodiada",
+      "rlAgents": "agentes de aprendizado por reforço"
+    }
+  },
+  "valueContext": {
+    "title": "Construído para Todo Tipo de Trader",
+    "useCases": {
+      "retail": {
+        "title": "Trader varejo",
+        "problem": "Trading manual cai presa da emoção.",
+        "solution": "Agente negocia apenas quando regras de risco passam na verificação zk.",
+        "outcome": "Disciplina estável, execução mais rápida."
+      },
+      "quant": {
+        "title": "Usuário curioso sobre quant",
+        "problem": "Implantação segura de RL é complexa.",
+        "solution": "Agente pré-configurado, restrições aplicáveis, custódia zero.",
+        "outcome": "Estratégia ao vivo em minutos."
+      }
+    },
+    "comparison": {
+      "title": "Por Que Escolher ReFi.Trading?",
+      "features": {
+        "custody": "Custódia",
+        "riskEnforcement": "Aplicação de risco",
+        "setupTime": "Tempo de configuração",
+        "brokerControl": "Controle do corretor",
+        "exitControl": "Controle de saída",
+        "auditTrail": "Trilha de auditoria"
+      },
+      "refi": {
+        "custody": "Sem custódia",
+        "riskEnforcement": "Verificações zk pré-negociação",
+        "setupTime": "Minutos",
+        "brokerControl": "Controle total",
+        "exitControl": "Completo",
+        "auditTrail": "Assinado, imutável"
+      },
+      "social": {
+        "custody": "Seus ativos transferidos",
+        "riskEnforcement": "Apenas pós-negociação",
+        "setupTime": "Minutos",
+        "brokerControl": "Limitado",
+        "exitControl": "Parcial",
+        "auditTrail": "Logs básicos"
+      },
+      "custodial": {
+        "custody": "Ativos controlados",
+        "riskEnforcement": "Varia",
+        "setupTime": "Horas a dias",
+        "brokerControl": "Limitado",
+        "exitControl": "Parcial",
+        "auditTrail": "Limitado"
+      }
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "questions": {
+      "custody": {
+        "question": "Vocês assumem a custódia?",
+        "answer": "Não. Seus ativos permanecem em sua conta de corretagem o tempo todo. Os agentes ReFi.Trading executam negociações através de conexões API somente leitura, garantindo que você mantenha controle total e propriedade de seus fundos."
+      },
+      "brokers": {
+        "question": "Quais corretores são suportados?",
+        "answer": "Atualmente suportamos Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab e Fidelity. Integrações de corretores adicionais são adicionadas com base na demanda do usuário e compatibilidade técnica."
+      },
+      "agents": {
+        "question": "Como os agentes decidem negociar?",
+        "answer": "Nossos agentes ReFinity© usam aprendizado por reforço em conjunto (PPO, TD3, RVI-Q) com centralização de recompensas e ajuste MetaOptimize. Eles se adaptam continuamente às condições do mercado respeitando seus parâmetros de risco predefinidos."
+      },
+      "risk": {
+        "question": "Quais controles de risco são aplicados?",
+        "answer": "Cada negociação deve passar por uma verificação de prova de conhecimento zero antes da execução. Isso inclui limites de Value-at-Risk (VaR), restrições de tamanho de posição e caps de drawdown que você define. Nenhuma negociação pode violar esses limites matematicamente provados."
+      }
+    }
+  },
+  "team": {
+    "title": "Equipe Fundadora",
+    "subtitle": "Conheça os visionários por trás do ReFi.Trading"
+  },
+  "blog": {
+    "title": "Últimas Perspectivas",
+    "subtitle": "Análises profundas sobre tecnologia de trading IA, aprendizado por reforço, provas de conhecimento zero e análise de mercado",
+    "readMore": "Ler Mais",
+    "viewAll": "Ver Todos os Artigos",
+    "minRead": "min de leitura"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Plataforma",
+      "resources": "Recursos",
+      "company": "Empresa",
+      "getStarted": "Começar"
+    },
+    "newsletter": {
+      "title": "Mantenha-se Atualizado",
+      "placeholder": "Digite seu email"
+    },
+    "copyright": "Todos os direitos reservados.",
+    "builtWith": "Construído com",
+    "forTraders": "para traders do mundo todo"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "readMore": "Ler Mais",
+    "learnMore": "Saber Mais",
+    "getStarted": "Começar",
+    "comingSoon": "Em Breve"
+  }
+}

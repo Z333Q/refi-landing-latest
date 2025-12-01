@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "Comment Ça Marche",
+    "value": "Valeur",
+    "roadmap": "Feuille de Route",
+    "blog": "Blog",
+    "team": "Équipe",
+    "analyzer": "Analyseur",
+    "getStarted": "Commencer",
+    "joinWaitlist": "Rejoindre la Liste d'Attente",
+    "bookDemo": "Réserver une Démo",
+    "partners": "Partenaires",
+    "careers": "Carrières"
+  },
+  "hero": {
+    "badge": "OpenFi pour Agents de Trading. Ordres pré-prouvés. Limites appliquées",
+    "title": "IA de Wall Street, Radicalement Accessible",
+    "subtitle": "Exécutez des trades depuis votre courtier. Appliquez des contrôles de risque avec des preuves à divulgation nulle. Auto-garde complète.",
+    "requestAccess": "Demander un Accès Anticipé",
+    "watchDemo": "Regarder la démo de 2 minutes"
+  },
+  "howItWorks": {
+    "title": "Comment le ReFi.Trading fonctionne en 90 secondes",
+    "steps": {
+      "connect": {
+        "title": "Connectez votre courtier",
+        "description": "Les actifs restent sous votre contrôle."
+      },
+      "setRisk": {
+        "title": "Définissez les limites de risque",
+        "description": "Chaque ordre passe une vérification à divulgation nulle."
+      },
+      "launch": {
+        "title": "Lancez votre agent",
+        "description": "Arrêtez ou reprenez d'un clic."
+      }
+    },
+    "proofPoints": {
+      "title": "Construit sur une Technologie Éprouvée",
+      "zkVerified": "application de risque vérifiée par zk",
+      "selfCustodied": "exécution auto-gardée",
+      "rlAgents": "agents d'apprentissage par renforcement"
+    }
+  },
+  "valueContext": {
+    "title": "Conçu pour Tous Types de Traders",
+    "useCases": {
+      "retail": {
+        "title": "Trader particulier",
+        "problem": "Le trading manuel succombe à l'émotion.",
+        "solution": "L'agent trade seulement quand les règles de risque passent la vérification zk.",
+        "outcome": "Discipline stable, exécution plus rapide."
+      },
+      "quant": {
+        "title": "Utilisateur curieux de quant",
+        "problem": "Le déploiement sécurisé de RL est complexe.",
+        "solution": "Agent préconfiguré, contraintes applicables, garde zéro.",
+        "outcome": "Stratégie en direct en minutes."
+      }
+    },
+    "comparison": {
+      "title": "Pourquoi Choisir ReFi.Trading?",
+      "features": {
+        "custody": "Garde",
+        "riskEnforcement": "Application du risque",
+        "setupTime": "Temps de configuration",
+        "brokerControl": "Contrôle du courtier",
+        "exitControl": "Contrôle de sortie",
+        "auditTrail": "Piste d'audit"
+      },
+      "refi": {
+        "custody": "Pas de garde",
+        "riskEnforcement": "Vérifications zk pré-trade",
+        "setupTime": "Minutes",
+        "brokerControl": "Contrôle total",
+        "exitControl": "Complet",
+        "auditTrail": "Signé, immuable"
+      },
+      "social": {
+        "custody": "Vos actifs transférés",
+        "riskEnforcement": "Post-trade seulement",
+        "setupTime": "Minutes",
+        "brokerControl": "Limité",
+        "exitControl": "Partiel",
+        "auditTrail": "Logs basiques"
+      },
+      "custodial": {
+        "custody": "Actifs contrôlés",
+        "riskEnforcement": "Varie",
+        "setupTime": "Heures à jours",
+        "brokerControl": "Limité",
+        "exitControl": "Partiel",
+        "auditTrail": "Limité"
+      }
+    }
+  },
+  "faq": {
+    "title": "Questions Fréquemment Posées",
+    "questions": {
+      "custody": {
+        "question": "Prenez-vous la garde?",
+        "answer": "Non. Vos actifs restent dans votre compte de courtage en permanence. Les agents ReFi.Trading exécutent des trades via des connexions API somente leitura, garantissant que vous maintenez contrôle total et propriété de vos fonds."
+      },
+      "brokers": {
+        "question": "Quels courtiers sont supportés?",
+        "answer": "Nous supportons actuellement Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab et Fidelity. Des intégrations de courtiers supplémentaires sont ajoutées selon la demande des utilisateurs et compatibilité technique."
+      },
+      "agents": {
+        "question": "Comment les agents décident-ils de trader?",
+        "answer": "Nos agents ReFinity© utilisent l'apprentissage par renforcement d'ensemble (PPO, TD3, RVI-Q) avec centralisation de récompenses et ajuste MetaOptimize. Ils s'adaptent continuellement aux conditions du marché tout en respectant vos paramètres de risque prédéfinis."
+      },
+      "risk": {
+        "question": "Quels contrôles de risque sont appliqués?",
+        "answer": "Chaque trade doit passer une vérification de preuve à divulgation nulle avant l'exécution. Cela inclut les limites de Value-at-Risk (VaR), contraintes de taille de position et caps de drawdown que vous définissez. Aucun trade ne peut violer ces limites mathématiquement prouvées."
+      }
+    }
+  },
+  "team": {
+    "title": "Équipe Fondatrice",
+    "subtitle": "Rencontrez les visionnaires derrière ReFi.Trading"
+  },
+  "blog": {
+    "title": "Dernières Perspectives",
+    "subtitle": "Analyses approfondies sur la technologie de trading IA, l'apprentissage par renforcement, les preuves à divulgation nulle et l'analyse de marché",
+    "readMore": "Lire Plus",
+    "viewAll": "Voir Tous les Articles",
+    "minRead": "min de lecture"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Plateforme",
+      "resources": "Ressources",
+      "company": "Entreprise",
+      "getStarted": "Commencer"
+    },
+    "newsletter": {
+      "title": "Restez Informé",
+      "placeholder": "Entrez votre email"
+    },
+    "copyright": "Tous droits réservés.",
+    "builtWith": "Construit avec",
+    "forTraders": "pour les traders du monde entier"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "readMore": "Lire Plus",
+    "learnMore": "En Savoir Plus",
+    "getStarted": "Commencer",
+    "comingSoon": "Bientôt Disponible"
+  }
+}

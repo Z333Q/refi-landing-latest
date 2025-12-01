@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "工作原理",
+    "value": "价值",
+    "roadmap": "路线图",
+    "blog": "博客",
+    "team": "团队",
+    "analyzer": "分析器",
+    "getStarted": "开始使用",
+    "joinWaitlist": "加入等候名单",
+    "bookDemo": "预约演示",
+    "partners": "合作伙伴",
+    "careers": "职业机会"
+  },
+  "hero": {
+    "badge": "交易代理的OpenFi。预先验证的订单。强制限制",
+    "title": "华尔街AI，极度易用",
+    "subtitle": "从您的经纪商执行交易。使用零知识证明执行风险控制。完全自托管。",
+    "requestAccess": "申请早期访问",
+    "watchDemo": "观看2分钟演示"
+  },
+  "howItWorks": {
+    "title": "ReFi.Trading如何在90秒内工作",
+    "steps": {
+      "connect": {
+        "title": "连接您的经纪商",
+        "description": "资产保持在您的控制下。"
+      },
+      "setRisk": {
+        "title": "设置风险限制",
+        "description": "每个订单都通过零知识检查。"
+      },
+      "launch": {
+        "title": "启动您的代理",
+        "description": "一键停止或恢复。"
+      }
+    },
+    "proofPoints": {
+      "title": "基于经过验证的技术构建",
+      "zkVerified": "zk验证的风险执行",
+      "selfCustodied": "自托管执行",
+      "rlAgents": "强化学习代理"
+    }
+  },
+  "valueContext": {
+    "title": "为每种类型的交易者而构建",
+    "useCases": {
+      "retail": {
+        "title": "零售交易者",
+        "problem": "手动交易容易受情绪影响。",
+        "solution": "代理仅在风险规则通过zk检查时交易。",
+        "outcome": "稳定的纪律，更快的执行。"
+      },
+      "quant": {
+        "title": "量化好奇用户",
+        "problem": "安全的RL部署很复杂。",
+        "solution": "预构建代理，可执行约束，零托管。",
+        "outcome": "几分钟内实现实时策略。"
+      }
+    },
+    "comparison": {
+      "title": "为什么选择ReFi.Trading？",
+      "features": {
+        "custody": "托管",
+        "riskEnforcement": "风险执行",
+        "setupTime": "设置时间",
+        "brokerControl": "经纪商控制",
+        "exitControl": "退出控制",
+        "auditTrail": "审计跟踪"
+      },
+      "refi": {
+        "custody": "无托管",
+        "riskEnforcement": "交易前zk检查",
+        "setupTime": "分钟",
+        "brokerControl": "完全控制",
+        "exitControl": "完全",
+        "auditTrail": "签名，不可变"
+      },
+      "social": {
+        "custody": "您的资产已转移",
+        "riskEnforcement": "仅交易后",
+        "setupTime": "分钟",
+        "brokerControl": "有限",
+        "exitControl": "部分",
+        "auditTrail": "基本日志"
+      },
+      "custodial": {
+        "custody": "资产受控",
+        "riskEnforcement": "变化",
+        "setupTime": "小时到天",
+        "brokerControl": "有限",
+        "exitControl": "部分",
+        "auditTrail": "有限"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "questions": {
+      "custody": {
+        "question": "你们会托管吗？",
+        "answer": "不会。您的资产始终保留在您的经纪账户中。ReFi.Trading代理通过只读API连接执行交易，确保您保持对资金的完全控制和所有权。"
+      },
+      "brokers": {
+        "question": "支持哪些经纪商？",
+        "answer": "我们目前支持Interactive Brokers、TD Ameritrade、E*TRADE、Charles Schwab和Fidelity。根据用户需求和技术兼容性添加其他经纪商集成。"
+      },
+      "agents": {
+        "question": "代理如何决定交易？",
+        "answer": "我们的ReFinity©代理使用集成强化学习（PPO、TD3、RVI-Q）与奖励中心化和MetaOptimize调优。它们持续适应市场条件，同时尊重您预定义的风险参数。"
+      },
+      "risk": {
+        "question": "执行哪些风险控制？",
+        "answer": "每笔交易在执行前必须通过零知识证明验证。这包括您设置的风险价值（VaR）限制、头寸规模约束和回撤上限。没有交易可以违反这些数学证明的限制。"
+      }
+    }
+  },
+  "team": {
+    "title": "创始团队",
+    "subtitle": "认识ReFi.Trading背后的远见者"
+  },
+  "blog": {
+    "title": "最新见解",
+    "subtitle": "深入了解AI交易技术、强化学习、零知识证明和市场分析",
+    "readMore": "阅读更多",
+    "viewAll": "查看所有文章",
+    "minRead": "分钟阅读"
+  },
+  "footer": {
+    "sections": {
+      "platform": "平台",
+      "resources": "资源",
+      "company": "公司",
+      "getStarted": "开始使用"
+    },
+    "newsletter": {
+      "title": "保持更新",
+      "placeholder": "输入您的邮箱"
+    },
+    "copyright": "版权所有。",
+    "builtWith": "构建于",
+    "forTraders": "为全球交易者"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "submit": "提交",
+    "cancel": "取消",
+    "close": "关闭",
+    "next": "下一个",
+    "previous": "上一个",
+    "readMore": "阅读更多",
+    "learnMore": "了解更多",
+    "getStarted": "开始使用",
+    "comingSoon": "即将推出"
+  }
+}

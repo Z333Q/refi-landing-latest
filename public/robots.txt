@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://refi.trading/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Additional rules for specific bots
+User-agent: GPTBot
+Allow: /blog/
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /cookie-policy
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Allow: /blog/
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /cookie-policy
+Disallow: /api/
+
+User-agent: Bingbot
+Allow: /
+Allow: /blog/
+Allow: /privacy-policy
+Allow: /terms-of-service
+Allow: /cookie-policy
+Disallow: /api/

@@ -1,0 +1,25 @@
+{
+  "name": "ReFi.Trading",
+  "short_name": "ReFi",
+  "description": "Revolutionary AI trading platform with self-custodied execution and zero-knowledge risk proofs",
+  "icons": [
+    {
+      "src": "/green-logo-only-square.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/green-logo-only-square.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0CD4A0",
+  "background_color": "#101820",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "categories": ["finance", "business", "productivity"],
+  "lang": "en-US"
+}

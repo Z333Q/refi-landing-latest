@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  body {
+    @apply antialiased;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  }
+  
+  /* Focus styles for accessibility */
+  *:focus {
+    outline: 2px solid #0CD4A0;
+    outline-offset: 2px;
+  }
+  
+  /* Skip link for screen readers */
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #0CD4A0;
+    color: #101820;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1000;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+  
+  /* Improve readability */
+  p, li, td, th {
+    max-width: 75ch;
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .text-gray-300 {
+      @apply text-gray-100;
+    }
+    .text-gray-400 {
+      @apply text-gray-200;
+    }
+  }
+  
+  /* RTL support */
+  [dir="rtl"] {
+    text-align: right;
+  }
+  
+  [dir="rtl"] .flex {
+    flex-direction: row-reverse;
+  }
+  
+  [dir="rtl"] .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+  
+  [dir="rtl"] .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-6 tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-gray-300 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-16;
+  }
+
+  .card {
+    @apply bg-charcoal-lighter rounded-lg p-8 transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-mint to-mint-light;
+  }
+
+  .grid-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(12, 212, 160, 0.15) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .particle-canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .particle {
+    position: absolute;
+    background: radial-gradient(circle at center, rgba(12, 212, 160, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform-origin: center center;
+    transition: none; /* Remove expensive transitions */
+    mix-blend-mode: screen;
+    will-change: transform, opacity;
+    filter: blur(1px); /* Reduce blur for better performance */
+  }
+
+  /* Remove expensive pseudo-elements and collision effects */
+
+  .particle-line {
+    position: absolute;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(12, 212, 160, 0.05), rgba(12, 212, 160, 0.1));
+    transform-origin: left center;
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: none; /* Remove transition for better performance */
+  }
+
+  .glow-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glow-effect::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg, rgba(12, 212, 160, 0.2), rgba(12, 212, 160, 0), rgba(12, 212, 160, 0.2));
+    animation: glow 4s linear infinite;
+    filter: blur(4px); /* Reduce blur */
+  }
+}
+
+@layer utilities {
+  .section-spacing {
+    @apply py-24 md:py-32;
+  }
+  
+  .content-spacing {
+    @apply space-y-16;
+  }
+
+  .animate-float {
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s linear infinite;
+  }
+
+  .brightness-115 {
+    filter: brightness(1.15);
+  }
+
+  /* Partner logo enhancements */
+  .partner-logo-glow {
+    filter: brightness(1.1) contrast(1.05) drop-shadow(0 0 8px rgba(255, 255, 255, 0.05));
+  }
+
+  /* Disable animations on mobile for better performance */
+  @media (max-width: 768px) {
+    .animate-pulse-slow, .animate-float, .animate-gradient {
+      animation: none;
+    }
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  50% {
+    transform: translateY(0) translateX(40px);
+  }
+  75% {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+}

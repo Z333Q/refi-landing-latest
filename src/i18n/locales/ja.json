@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "仕組み",
+    "value": "価値",
+    "roadmap": "ロードマップ",
+    "blog": "ブログ",
+    "team": "チーム",
+    "analyzer": "アナライザー",
+    "getStarted": "始める",
+    "joinWaitlist": "ウェイトリストに参加",
+    "bookDemo": "デモを予約",
+    "partners": "パートナー",
+    "careers": "キャリア"
+  },
+  "hero": {
+    "badge": "トレーディングエージェント向けOpenFi。事前検証済み注文。強制リミット",
+    "title": "ウォール街AI、根本的にアクセシブル",
+    "subtitle": "ブローカーから取引を実行。ゼロ知識証明でリスク制御を適用。完全なセルフカストディ。",
+    "requestAccess": "早期アクセスをリクエスト",
+    "watchDemo": "2分間のデモを見る"
+  },
+  "howItWorks": {
+    "title": "ReFi.Tradingが90秒でどのように機能するか",
+    "steps": {
+      "connect": {
+        "title": "ブローカーを接続",
+        "description": "資産はあなたのコントロール下に残ります。"
+      },
+      "setRisk": {
+        "title": "リスク制限を設定",
+        "description": "すべての注文はゼロ知識チェックを通過します。"
+      },
+      "launch": {
+        "title": "エージェントを起動",
+        "description": "ワンクリックで停止または再開。"
+      }
+    },
+    "proofPoints": {
+      "title": "実証済み技術の上に構築",
+      "zkVerified": "zk検証されたリスク実行",
+      "selfCustodied": "セルフカストディ実行",
+      "rlAgents": "強化学習エージェント"
+    }
+  },
+  "valueContext": {
+    "title": "あらゆるタイプのトレーダーのために構築",
+    "useCases": {
+      "retail": {
+        "title": "個人トレーダー",
+        "problem": "手動取引は感情の餌食になります。",
+        "solution": "エージェントはリスクルールがzkチェックを通過した時のみ取引します。",
+        "outcome": "安定した規律、より速い実行。"
+      },
+      "quant": {
+        "title": "クオンツ好奇心旺盛なユーザー",
+        "problem": "安全なRL展開は複雑です。",
+        "solution": "事前構築エージェント、実行可能な制約、ゼロカストディ。",
+        "outcome": "数分でライブ戦略。"
+      }
+    },
+    "comparison": {
+      "title": "なぜReFi.Tradingを選ぶのか？",
+      "features": {
+        "custody": "カストディ",
+        "riskEnforcement": "リスク実行",
+        "setupTime": "セットアップ時間",
+        "brokerControl": "ブローカー制御",
+        "exitControl": "出口制御",
+        "auditTrail": "監査証跡"
+      },
+      "refi": {
+        "custody": "カストディなし",
+        "riskEnforcement": "取引前zkチェック",
+        "setupTime": "分",
+        "brokerControl": "完全制御",
+        "exitControl": "完全",
+        "auditTrail": "署名済み、不変"
+      },
+      "social": {
+        "custody": "あなたの資産が転送される",
+        "riskEnforcement": "取引後のみ",
+        "setupTime": "分",
+        "brokerControl": "制限あり",
+        "exitControl": "部分的",
+        "auditTrail": "基本ログ"
+      },
+      "custodial": {
+        "custody": "資産が制御される",
+        "riskEnforcement": "様々",
+        "setupTime": "時間から日",
+        "brokerControl": "制限あり",
+        "exitControl": "部分的",
+        "auditTrail": "制限あり"
+      }
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "questions": {
+      "custody": {
+        "question": "カストディを取りますか？",
+        "answer": "いいえ。あなたの資産は常にあなたのブローカー口座に残ります。ReFi.Tradingエージェントは読み取り専用API接続を通じて取引を実行し、あなたが資金の完全な制御と所有権を維持することを保証します。"
+      },
+      "brokers": {
+        "question": "どのブローカーがサポートされていますか？",
+        "answer": "現在、Interactive Brokers、TD Ameritrade、E*TRADE、Charles Schwab、Fidelityをサポートしています。ユーザーの需要と技術的互換性に基づいて追加のブローカー統合が追加されます。"
+      },
+      "agents": {
+        "question": "エージェントはどのように取引を決定しますか？",
+        "answer": "私たちのReFinity©エージェントは、報酬中心化とMetaOptimize調整を伴うアンサンブル強化学習（PPO、TD3、RVI-Q）を使用します。事前定義されたリスクパラメータを尊重しながら、市場状況に継続的に適応します。"
+      },
+      "risk": {
+        "question": "どのようなリスク制御が実行されますか？",
+        "answer": "すべての取引は実行前にゼロ知識証明検証を通過する必要があります。これには、あなたが設定するValue-at-Risk（VaR）制限、ポジションサイズ制約、ドローダウンキャップが含まれます。数学的に証明されたこれらの制限に違反する取引はありません。"
+      }
+    }
+  },
+  "team": {
+    "title": "創設チーム",
+    "subtitle": "ReFi.Tradingの背後にいるビジョナリーに会う"
+  },
+  "blog": {
+    "title": "最新の洞察",
+    "subtitle": "AI取引技術、強化学習、ゼロ知識証明、市場分析への深い洞察",
+    "readMore": "続きを読む",
+    "viewAll": "すべての記事を見る",
+    "minRead": "分読む"
+  },
+  "footer": {
+    "sections": {
+      "platform": "プラットフォーム",
+      "resources": "リソース",
+      "company": "会社",
+      "getStarted": "始める"
+    },
+    "newsletter": {
+      "title": "最新情報を入手",
+      "placeholder": "メールアドレスを入力"
+    },
+    "copyright": "すべての権利予約。",
+    "builtWith": "で構築",
+    "forTraders": "世界中のトレーダーのために"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "next": "次",
+    "previous": "前",
+    "readMore": "続きを読む",
+    "learnMore": "詳細を学ぶ",
+    "getStarted": "始める",
+    "comingSoon": "近日公開"
+  }
+}

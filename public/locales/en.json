@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "How It Works",
+    "value": "Value",
+    "roadmap": "Roadmap",
+    "blog": "Blog",
+    "team": "Team",
+    "analyzer": "Analyzer",
+    "getStarted": "Get Started",
+    "joinWaitlist": "Join Waitlist",
+    "bookDemo": "Book Demo",
+    "partners": "Partners",
+    "careers": "Careers"
+  },
+  "hero": {
+    "badge": "OpenFi for Trading Agents. Pre-proved orders. Enforced limits",
+    "title": "Wall Street AI, Radically Accessible",
+    "subtitle": "Execute trades from your brokerage. Enforce risk controls with zero-knowledge proofs. Full self-custody.",
+    "requestAccess": "Request Early Access",
+    "watchDemo": "Watch 2-minute demo"
+  },
+  "howItWorks": {
+    "title": "How ReFi.Trading works",
+    "steps": {
+      "connect": {
+        "title": "Connect your broker",
+        "description": "Assets remain in your control."
+      },
+      "setRisk": {
+        "title": "Set risk limits",
+        "description": "Every order passes a zero-knowledge check."
+      },
+      "launch": {
+        "title": "Launch your agent",
+        "description": "Stop or resume with one click."
+      }
+    },
+    "proofPoints": {
+      "title": "Built on Proven Technology",
+      "zkVerified": "zk-verified risk enforcement",
+      "selfCustodied": "Self-custodied execution",
+      "rlAgents": "Reinforcement-learning agents"
+    }
+  },
+  "valueContext": {
+    "title": "Built for Every Type of Trader",
+    "useCases": {
+      "retail": {
+        "title": "Retail trader",
+        "problem": "Manual trading falls prey to emotion.",
+        "solution": "Agent trades only when risk rules pass zk check.",
+        "outcome": "Stable discipline, faster execution."
+      },
+      "quant": {
+        "title": "Quant-curious user",
+        "problem": "Safe RL deployment is complex.",
+        "solution": "Prebuilt agent, enforceable constraints, zero custody.",
+        "outcome": "Live strategy in minutes."
+      }
+    },
+    "comparison": {
+      "title": "Why Choose ReFi.Trading?",
+      "features": {
+        "custody": "Custody",
+        "riskEnforcement": "Risk enforcement",
+        "setupTime": "Setup time",
+        "brokerControl": "Broker control",
+        "exitControl": "Exit control",
+        "auditTrail": "Audit trail"
+      },
+      "refi": {
+        "custody": "No custody",
+        "riskEnforcement": "Pre-trade zk checks",
+        "setupTime": "Minutes",
+        "brokerControl": "Full control",
+        "exitControl": "Full",
+        "auditTrail": "Signed, immutable"
+      },
+      "social": {
+        "custody": "Your assets transferred",
+        "riskEnforcement": "Post-trade only",
+        "setupTime": "Minutes",
+        "brokerControl": "Limited",
+        "exitControl": "Partial",
+        "auditTrail": "Basic logs"
+      },
+      "custodial": {
+        "custody": "Assets controlled",
+        "riskEnforcement": "Varies",
+        "setupTime": "Hours to days",
+        "brokerControl": "Limited",
+        "exitControl": "Partial",
+        "auditTrail": "Limited"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "custody": {
+        "question": "Do you take custody?",
+        "answer": "No. Your assets remain in your brokerage account at all times. ReFi.Trading agents execute trades through read-only API connections, ensuring you maintain full control and ownership of your funds."
+      },
+      "brokers": {
+        "question": "Which brokers are supported?",
+        "answer": "We currently support Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
+      },
+      "agents": {
+        "question": "How do agents decide to trade?",
+        "answer": "Our ReFinity© agents use ensemble reinforcement learning (PPO, TD3, RVI-Q) with reward centering and MetaOptimize tuning. They continuously adapt to market conditions while respecting your predefined risk parameters."
+      },
+      "risk": {
+        "question": "What risk controls are enforced?",
+        "answer": "Every trade must pass a zero-knowledge proof verification before execution. This includes Value-at-Risk (VaR) limits, position sizing constraints, and drawdown caps that you set. No trade can violate these mathematically proven limits."
+      }
+    }
+  },
+  "team": {
+    "title": "Founding Team",
+    "subtitle": "Meet the visionaries behind ReFi.Trading"
+  },
+  "blog": {
+    "title": "Latest Insights",
+    "subtitle": "Deep dives into AI trading technology, reinforcement learning, zero-knowledge proofs, and market analysis",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "minRead": "min read"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Platform",
+      "resources": "Resources",
+      "company": "Company",
+      "getStarted": "Get Started"
+    },
+    "newsletter": {
+      "title": "Stay Updated",
+      "placeholder": "Enter your email"
+    },
+    "copyright": "All rights reserved.",
+    "builtWith": "Built with",
+    "forTraders": "for traders worldwide"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "next": "Next",
+    "previous": "Previous",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "comingSoon": "Coming Soon"
+  }
+}

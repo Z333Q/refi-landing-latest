@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Analyzer | ReFi.Trading</title>
+
+  <!-- Preconnect hints for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Core stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Chart.js UMD bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <div style="color: #ff5252; text-align: center; margin: 1rem;">
+      JavaScript is required to run this application. Please enable JavaScript and reload.
+    </div>
+  </noscript>
+
+  <div id="app" style="display:none">
+    <header>
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="/green-logo-only-square.png" alt="ReFi Logo" class="logo" />
+          <h1>Portfolio Analyzer</h1>
+        </div>
+        <a href="/" class="back-link">← Back to ReFi.Trading</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar" aria-label="Asset Selection">
+        <!-- Action buttons section -->
+        <section id="analysis-actions">
+          <div class="action-buttons">
+            <button id="analyze-btn">Analyze Portfolio</button>
+            <button id="upload-btn">Upload Asset Portfolio</button>
+            <input type="file" id="file-upload-input" hidden accept=".csv, .txt, .xls, .xlsx" />
+            <div id="action-status-container" class="action-status" role="status" aria-live="polite">
+              <p id="action-status-message"></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="inventory">
+          <h2>Available Assets</h2>
+          <div id="assets-list-container">
+            <ul id="assets-list" role="list"></ul>
+          </div>
+          <button id="add-all-btn">Add All Assets</button>
+        </section>
+
+        <section id="selection">
+          <h2>Selected Assets</h2>
+          <ul id="selected-assets" aria-live="polite"></ul>
+          <button id="remove-all-btn">Remove All Assets</button>
+        </section>
+      </aside>
+
+      <main class="main-content">
+        <!-- Controls and options section -->
+        <section id="controls-and-options">
+          <div class="options-grid">
+            <div class="option-group">
+              <label for="start-date-input">Start Date</label>
+              <input type="date" id="start-date-input" />
+            </div>
+            <div class="option-group">
+              <label for="end-date-input">End Date</label>
+              <input type="date" id="end-date-input" />
+            </div>
+            <div class="option-group">
+              <label for="start-capital-input">Start Capital ($)</label>
+              <input type="number" id="start-capital-input" value="50000" min="1" />
+            </div>
+            <div class="option-group">
+              <label for="pnl-format-select">P&L Format</label>
+              <select id="pnl-format-select">
+                <option value="dollar" selected>Dollar ($)</option>
+                <option value="percent">Percent (%)</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <div class="chart-container">
+          <div id="loader" class="loader"></div>
+          <div id="chart-placeholder" class="chart-placeholder">Select assets or upload asset portfolio to analyze.</div>
+          <canvas id="equity-chart"></canvas>
+          
+          <div id="chart-toggles-container">
+            <div class="option-group checkbox-group">
+              <input type="checkbox" id="show-benchmark-checkbox" checked />
+              <label for="show-benchmark-checkbox">Show Benchmark (SPX)</label>
+            </div>
+            <div class="option-group checkbox-group">
+              <input type="checkbox" id="show-buy-and-hold-checkbox" checked />
+              <label for="show-buy-and-hold-checkbox">Show Buy & Hold</label>
+            </div>
+          </div>
+        </div>
+
+        <section id="results-container" class="hidden">
+          <div class="tabs">
+            <button class="tab-link active" data-tab="refinity-metrics">ReFinity</button>
+            <button class="tab-link" data-tab="buy-and-hold-metrics">Buy & Hold</button>
+          </div>
+          <div id="metrics-content">
+            <div id="refinity-metrics" class="tab-content active">
+              <!-- Refinity metrics will be injected here -->
+            </div>
+            <div id="buy-and-hold-metrics" class="tab-content">
+              <!-- Buy & Hold metrics will be injected here -->
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="emailGate">
+    <!-- Email gate will be rendered here by JavaScript -->
+  </div>
+
+  <!-- Custom Modal for Unavailable Symbols -->
+  <div id="custom-modal-overlay" class="modal-overlay">
+    <div id="custom-modal" class="modal-content">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <h2 id="modal-title"></h2>
+      <p id="modal-message"></p>
+      <ul id="modal-symbol-list"></ul>
+    </div>
+  </div>
+
+  <!-- Application script -->
+  <script type="module" src="dist/index.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      console.info('[INFO] DOMContentLoaded: Application markup ready');
+      const app = document.getElementById('app');
+      if (app) {
+        app.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "작동 방식",
+    "value": "가치",
+    "roadmap": "로드맵",
+    "blog": "블로그",
+    "team": "팀",
+    "analyzer": "분석기",
+    "getStarted": "시작하기",
+    "joinWaitlist": "대기자 명단 참여",
+    "bookDemo": "데모 예약",
+    "partners": "파트너",
+    "careers": "채용"
+  },
+  "hero": {
+    "badge": "트레이딩 에이전트를 위한 OpenFi. 사전 검증된 주문. 적용된 제한",
+    "title": "월스트리트 AI, 근본적으로 접근 가능",
+    "subtitle": "브로커에서 거래를 실행하세요. 영지식 증명으로 위험 통제를 적용하세요. 완전한 자기 보관.",
+    "requestAccess": "조기 액세스 요청",
+    "watchDemo": "2분 데모 보기"
+  },
+  "howItWorks": {
+    "title": "ReFi.Trading이 90초 만에 작동하는 방법",
+    "steps": {
+      "connect": {
+        "title": "브로커 연결",
+        "description": "자산은 귀하의 통제 하에 남아있습니다."
+      },
+      "setRisk": {
+        "title": "위험 한계 설정",
+        "description": "모든 주문은 영지식 검사를 통과합니다."
+      },
+      "launch": {
+        "title": "에이전트 시작",
+        "description": "한 번의 클릭으로 중지하거나 재개하세요."
+      }
+    },
+    "proofPoints": {
+      "title": "검증된 기술 위에 구축",
+      "zkVerified": "zk 검증된 위험 실행",
+      "selfCustodied": "자기 보관 실행",
+      "rlAgents": "강화 학습 에이전트"
+    }
+  },
+  "valueContext": {
+    "title": "모든 유형의 트레이더를 위해 구축",
+    "useCases": {
+      "retail": {
+        "title": "소매 트레이더",
+        "problem": "수동 거래는 감정의 먹이가 됩니다.",
+        "solution": "에이전트는 위험 규칙이 zk 검사를 통과할 때만 거래합니다.",
+        "outcome": "안정적인 규율, 더 빠른 실행."
+      },
+      "quant": {
+        "title": "퀀트 호기심 사용자",
+        "problem": "안전한 RL 배포는 복잡합니다.",
+        "solution": "사전 구축된 에이전트, 시행 가능한 제약, 제로 보관.",
+        "outcome": "몇 분 만에 라이브 전략."
+      }
+    },
+    "comparison": {
+      "title": "왜 ReFi.Trading을 선택해야 할까요?",
+      "features": {
+        "custody": "보관",
+        "riskEnforcement": "위험 시행",
+        "setupTime": "설정 시간",
+        "brokerControl": "브로커 제어",
+        "exitControl": "출구 제어",
+        "auditTrail": "감사 추적"
+      },
+      "refi": {
+        "custody": "보관 없음",
+        "riskEnforcement": "거래 전 zk 검사",
+        "setupTime": "분",
+        "brokerControl": "완전 제어",
+        "exitControl": "완전",
+        "auditTrail": "서명됨, 불변"
+      },
+      "social": {
+        "custody": "귀하의 자산이 이전됨",
+        "riskEnforcement": "거래 후에만",
+        "setupTime": "분",
+        "brokerControl": "제한됨",
+        "exitControl": "부분적",
+        "auditTrail": "기본 로그"
+      },
+      "custodial": {
+        "custody": "자산이 통제됨",
+        "riskEnforcement": "다양함",
+        "setupTime": "시간에서 일",
+        "brokerControl": "제한됨",
+        "exitControl": "부분적",
+        "auditTrail": "제한됨"
+      }
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "questions": {
+      "custody": {
+        "question": "보관을 하시나요?",
+        "answer": "아니요. 귀하의 자산은 항상 귀하의 브로커 계정에 남아있습니다. ReFi.Trading 에이전트는 읽기 전용 API 연결을 통해 거래를 실행하여 귀하가 자금에 대한 완전한 통제권과 소유권을 유지하도록 보장합니다."
+      },
+      "brokers": {
+        "question": "어떤 브로커가 지원되나요?",
+        "answer": "현재 Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, Fidelity를 지원합니다. 사용자 수요와 기술적 호환성에 따라 추가 브로커 통합이 추가됩니다."
+      },
+      "agents": {
+        "question": "에이전트는 어떻게 거래를 결정하나요?",
+        "answer": "우리의 ReFinity© 에이전트는 보상 중심화와 MetaOptimize 튜닝을 통한 앙상블 강화 학습(PPO, TD3, RVI-Q)을 사용합니다. 사전 정의된 위험 매개변수를 존중하면서 시장 조건에 지속적으로 적응합니다."
+      },
+      "risk": {
+        "question": "어떤 위험 통제가 시행되나요?",
+        "answer": "모든 거래는 실행 전에 영지식 증명 검증을 통과해야 합니다. 여기에는 귀하가 설정한 Value-at-Risk(VaR) 한계, 포지션 크기 제약, 드로다운 상한이 포함됩니다. 수학적으로 증명된 이러한 한계를 위반할 수 있는 거래는 없습니다."
+      }
+    }
+  },
+  "team": {
+    "title": "창립 팀",
+    "subtitle": "ReFi.Trading 뒤의 비전가들을 만나보세요"
+  },
+  "blog": {
+    "title": "최신 인사이트",
+    "subtitle": "AI 거래 기술, 강화 학습, 영지식 증명 및 시장 분석에 대한 심층 분석",
+    "readMore": "더 읽기",
+    "viewAll": "모든 기사 보기",
+    "minRead": "분 읽기"
+  },
+  "footer": {
+    "sections": {
+      "platform": "플랫폼",
+      "resources": "리소스",
+      "company": "회사",
+      "getStarted": "시작하기"
+    },
+    "newsletter": {
+      "title": "최신 정보 받기",
+      "placeholder": "이메일 입력"
+    },
+    "copyright": "모든 권리 보유.",
+    "builtWith": "로 구축",
+    "forTraders": "전 세계 트레이더를 위해"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류",
+    "success": "성공",
+    "submit": "제출",
+    "cancel": "취소",
+    "close": "닫기",
+    "next": "다음",
+    "previous": "이전",
+    "readMore": "더 읽기",
+    "learnMore": "더 알아보기",
+    "getStarted": "시작하기",
+    "comingSoon": "곧 출시"
+  }
+}

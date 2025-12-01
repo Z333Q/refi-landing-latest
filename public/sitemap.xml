@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://refi.trading/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://refi.trading/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://refi.trading/blog/wall-street-ai-for-all</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>ReFi.Trading Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-05-25T00:00:00Z</news:publication_date>
+      <news:title>Wall Street AI for All</news:title>
+      <news:keywords>AI, Trading, Reinforcement Learning, Technology</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/7567434/pexels-photo-7567434.jpeg</image:loc>
+      <image:title>Wall Street AI for All</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://refi.trading/blog/open-hackable-provable</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>ReFi.Trading Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-05-26T00:00:00Z</news:publication_date>
+      <news:title>Open, Hackable, Provable</news:title>
+      <news:keywords>Open Source, Trading, Reinforcement Learning, Development</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg</image:loc>
+      <image:title>Open, Hackable, Provable</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://refi.trading/blog/next-rails-of-finance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>ReFi.Trading Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-05-27T00:00:00Z</news:publication_date>
+      <news:title>The Next Rails of Finance</news:title>
+      <news:keywords>Investment, Trading, AI, Infrastructure</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/7567596/pexels-photo-7567596.jpeg</image:loc>
+      <image:title>The Next Rails of Finance</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://refi.trading/blog/decentralized-intelligence</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>ReFi.Trading Blog</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-05-28T00:00:00Z</news:publication_date>
+      <news:title>Decentralized Intelligence</news:title>
+      <news:keywords>Decentralization, AI, Trading, Blockchain</news:keywords>
+    </news:news>
+    <image:image>
+      <image:loc>https://images.pexels.com/photos/8370784/pexels-photo-8370784.jpeg</image:loc>
+      <image:title>Decentralized Intelligence</image:title>
+    </image:image>
+  </url>
+
+  <!-- Policy Pages -->
+  <url>
+    <loc>https://refi.trading/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://refi.trading/terms-of-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://refi.trading/cookie-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

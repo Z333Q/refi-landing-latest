@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "howItWorks": "Wie Es Funktioniert",
+    "value": "Wert",
+    "roadmap": "Roadmap",
+    "blog": "Blog",
+    "team": "Team",
+    "analyzer": "Analyzer",
+    "getStarted": "Loslegen",
+    "joinWaitlist": "Warteliste Beitreten",
+    "bookDemo": "Demo Buchen",
+    "partners": "Partner",
+    "careers": "Karriere"
+  },
+  "hero": {
+    "badge": "OpenFi für Trading-Agenten. Vorab geprüfte Orders. Durchgesetzte Limits",
+    "title": "Wall Street KI, Radikal Zugänglich",
+    "subtitle": "Führen Sie Trades von Ihrem Broker aus. Setzen Sie Risikokontrollen mit Zero-Knowledge-Beweisen durch. Vollständige Selbstverwahrung.",
+    "requestAccess": "Frühen Zugang Anfordern",
+    "watchDemo": "2-Minuten-Demo ansehen"
+  },
+  "howItWorks": {
+    "title": "Wie ReFi.Trading in 90 Sekunden funktioniert",
+    "steps": {
+      "connect": {
+        "title": "Verbinden Sie Ihren Broker",
+        "description": "Vermögenswerte bleiben unter Ihrer Kontrolle."
+      },
+      "setRisk": {
+        "title": "Risikogrenzen festlegen",
+        "description": "Jede Order durchläuft eine Zero-Knowledge-Prüfung."
+      },
+      "launch": {
+        "title": "Starten Sie Ihren Agenten",
+        "description": "Stoppen oder fortsetzen mit einem Klick."
+      }
+    },
+    "proofPoints": {
+      "title": "Aufgebaut auf Bewährter Technologie",
+      "zkVerified": "zk-verifizierte Risikodurchsetzung",
+      "selfCustodied": "selbstverwahrte Ausführung",
+      "rlAgents": "Verstärkungslernen-Agenten"
+    }
+  },
+  "valueContext": {
+    "title": "Entwickelt für Jeden Trader-Typ",
+    "useCases": {
+      "retail": {
+        "title": "Privattrader",
+        "problem": "Manueller Handel fällt Emotionen zum Opfer.",
+        "solution": "Agent handelt nur, wenn Risikoregeln die zk-Prüfung bestehen.",
+        "outcome": "Stabile Disziplin, schnellere Ausführung."
+      },
+      "quant": {
+        "title": "Quant-neugieriger Nutzer",
+        "problem": "Sichere RL-Bereitstellung ist komplex.",
+        "solution": "Vorkonfigurierter Agent, durchsetzbare Beschränkungen, null Verwahrung.",
+        "outcome": "Live-Strategie in Minuten."
+      }
+    },
+    "comparison": {
+      "title": "Warum ReFi.Trading Wählen?",
+      "features": {
+        "custody": "Verwahrung",
+        "riskEnforcement": "Risikodurchsetzung",
+        "setupTime": "Einrichtungszeit",
+        "brokerControl": "Broker-Kontrolle",
+        "exitControl": "Ausstiegskontrolle",
+        "auditTrail": "Prüfpfad"
+      },
+      "refi": {
+        "custody": "Keine Verwahrung",
+        "riskEnforcement": "Vor-Trade zk-Prüfungen",
+        "setupTime": "Minuten",
+        "brokerControl": "Vollständige Kontrolle",
+        "exitControl": "Vollständig",
+        "auditTrail": "Signiert, unveränderlich"
+      },
+      "social": {
+        "custody": "Ihre Vermögenswerte übertragen",
+        "riskEnforcement": "Nur nach dem Trade",
+        "setupTime": "Minuten",
+        "brokerControl": "Begrenzt",
+        "exitControl": "Teilweise",
+        "auditTrail": "Basis-Logs"
+      },
+      "custodial": {
+        "custody": "Vermögenswerte kontrolliert",
+        "riskEnforcement": "Variiert",
+        "setupTime": "Stunden bis Tage",
+        "brokerControl": "Begrenzt",
+        "exitControl": "Teilweise",
+        "auditTrail": "Begrenzt"
+      }
+    }
+  },
+  "faq": {
+    "title": "Häufig Gestellte Fragen",
+    "questions": {
+      "custody": {
+        "question": "Übernehmen Sie die Verwahrung?",
+        "answer": "Nein. Ihre Vermögenswerte verbleiben jederzeit in Ihrem Brokerage-Konto. ReFi.Trading-Agenten führen Trades über schreibgeschützte API-Verbindungen aus und stellen sicher, dass Sie die vollständige Kontrolle und das Eigentum an Ihren Mitteln behalten."
+      },
+      "brokers": {
+        "question": "Welche Broker werden unterstützt?",
+        "answer": "Wir unterstützen derzeit Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab und Fidelity. Zusätzliche Broker-Integrationen werden basierend auf Nutzernachfrage und technischer Kompatibilität hinzugefügt."
+      },
+      "agents": {
+        "question": "Wie entscheiden Agenten zu handeln?",
+        "answer": "Unsere ReFinity©-Agenten verwenden Ensemble-Verstärkungslernen (PPO, TD3, RVI-Q) mit Belohnungszentrierung und MetaOptimize-Tuning. Sie passen sich kontinuierlich an Marktbedingungen an, während sie Ihre vordefinierten Risikoparameter respektieren."
+      },
+      "risk": {
+        "question": "Welche Risikokontrollen werden durchgesetzt?",
+        "answer": "Jeder Trade muss vor der Ausführung eine Zero-Knowledge-Beweis-Verifizierung bestehen. Dies umfasst Value-at-Risk (VaR)-Grenzen, Positionsgrößenbeschränkungen und Drawdown-Obergrenzen, die Sie festlegen. Kein Trade kann diese mathematisch bewiesenen Grenzen verletzen."
+      }
+    }
+  },
+  "team": {
+    "title": "Gründerteam",
+    "subtitle": "Lernen Sie die Visionäre hinter ReFi.Trading kennen"
+  },
+  "blog": {
+    "title": "Neueste Einblicke",
+    "subtitle": "Tiefe Einblicke in KI-Trading-Technologie, Verstärkungslernen, Zero-Knowledge-Beweise und Marktanalyse",
+    "readMore": "Mehr Lesen",
+    "viewAll": "Alle Artikel Anzeigen",
+    "minRead": "Min Lesezeit"
+  },
+  "footer": {
+    "sections": {
+      "platform": "Plattform",
+      "resources": "Ressourcen",
+      "company": "Unternehmen",
+      "getStarted": "Loslegen"
+    },
+    "newsletter": {
+      "title": "Auf dem Laufenden Bleiben",
+      "placeholder": "E-Mail eingeben"
+    },
+    "copyright": "Alle Rechte vorbehalten.",
+    "builtWith": "Erstellt mit",
+    "forTraders": "für Trader weltweit"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "submit": "Senden",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "readMore": "Mehr Lesen",
+    "learnMore": "Mehr Erfahren",
+    "getStarted": "Loslegen",
+    "comingSoon": "Demnächst"
+  }
+}
