@@ -6,25 +6,31 @@ const CompactRoadmapSection: React.FC = () => {
       quarter: 'Q4 2025',
       status: 'COMPLETED',
       title: 'Foundation & Validation',
-      description: 'Interviews with traders, fund managers & regulators. North star metrics defined. RL benchmarks established with walk-forward validation.'
+      description: 'Interviews with traders, fund managers & regulators (CIRO, SEC, ADGM). North star metrics defined. RL benchmarks established with walk-forward validation. Compliance framework validated.'
     },
     {
       quarter: 'Q1 2026',
       status: 'IN PROGRESS',
-      title: 'Alpha Platform Launch',
-      description: 'Private alpha with select institutional partners. Real-money testing. SDK release for developers. Integration with major brokers.'
+      title: 'UAE/GCC Alpha Launch',
+      description: 'ADGM RegLab sandbox approval. Private alpha in UAE/GCC with institutional partners. Real-money testing. SDK release. Integration with major brokers (IBKR, Alpaca).'
     },
     {
       quarter: 'Q2 2026',
       status: 'UPCOMING',
-      title: 'Public Beta & Market Entry',
-      description: 'Open beta launch. US & Canada market entry. Regulatory approvals. Governance token launch. Community onboarding programs.'
+      title: 'Canada Beta & Market Entry',
+      description: 'CIRO sandbox approval. Canada beta launch. Human-in-the-loop validation. Explainable AI features. Progressive caps & risk controls. Community onboarding.'
     },
     {
       quarter: 'Q3 2026',
       status: 'UPCOMING',
-      title: 'Scale & Global Expansion',
-      description: 'European market entry. Advanced RL strategies. Mobile apps. Strategic partnerships with exchanges. Institutional custody integration.'
+      title: 'Scale & Advanced Features',
+      description: 'Advanced RL strategies. Mobile apps (iOS/Android). Enhanced zk-proof VaR system. Strategic exchange partnerships. Institutional-grade audit trails.'
+    },
+    {
+      quarter: 'Q4 2026',
+      status: 'UPCOMING',
+      title: 'USA Market Entry & Global Expansion',
+      description: 'SEC FinHub approval. USA beta launch. European expansion planning. Multi-jurisdiction compliance validated. Preparation for Series A & token framework (2027).'
     }
   ];
 
