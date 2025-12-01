@@ -4,15 +4,19 @@ const CompactRoadmapSection: React.FC = () => {
   const roadmapItems = [
     {
       quarter: 'Q4 2025',
-      title: 'SDK alpha & smart-ETF integration'
+      title: 'Product Validation'
     },
     {
-      quarter: 'Q2 2026', 
-      title: 'Public beta & governance features'
+      quarter: 'Q1 2026',
+      title: 'Alpha Platform Launch'
     },
     {
-      quarter: 'Q4 2026',
-      title: 'Wallet launch & exchange integration'
+      quarter: 'Q2 2026',
+      title: 'Public Beta'
+    },
+    {
+      quarter: 'Q3 2026',
+      title: 'Scale & Optimize'
     }
   ];
 

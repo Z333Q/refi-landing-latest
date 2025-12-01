@@ -21,8 +21,8 @@ const CompactTeamSection: React.FC = () => {
     {
       name: 'Zeshan Ahmad',
       role: 'Chief Product & Strategy',
-      bio: 'Professor of Blockchain, Cryptography, and Software Design. Has scaled multiple Web3 and DTC ventures, leads product development and governance architecture.',
-      credibility: 'Former blockchain professor, scaled 3 Web3 startups',
+      bio: 'Expert in Blockchain, Cryptography, and Software Design. Has scaled multiple Web3 and DTC ventures, leads product development and governance architecture.',
+      credibility: 'Scaled 3 Web3 startups, product & governance expert',
       image: '/blog-images/zeshan-refi-trading.jpg',
       socialLinks: {
         linkedin: 'https://linkedin.com/in/zeshan',
