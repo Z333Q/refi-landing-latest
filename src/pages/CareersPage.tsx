@@ -103,10 +103,10 @@ const CareersPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | ReFi.Trading - Build Execution Automation Infrastructure</title>
-        <meta name="description" content="Join ReFi.Trading and help build non-custodial execution automation infrastructure. Explore open positions in engineering, cryptography, and platform technology at our innovative fintech startup." />
+        <title>Careers | ReFi.Trading - Join the AI Trading Revolution</title>
+        <meta name="description" content="Join ReFi.Trading and help build the future of AI trading. Explore open positions in engineering, cryptography, and infrastructure at our innovative fintech startup." />
         <meta property="og:title" content="Careers | ReFi.Trading" />
-        <meta property="og:description" content="Join ReFi.Trading and help build non-custodial execution automation infrastructure. Explore open positions in engineering, cryptography, and platform technology." />
+        <meta property="og:description" content="Join ReFi.Trading and help build the future of AI trading. Explore open positions in engineering, cryptography, and infrastructure at our innovative fintech startup." />
       </Helmet>
 
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
@@ -122,11 +122,11 @@ const CareersPage: React.FC = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Build <span className="text-gradient">Execution Automation</span> Infrastructure
+                Build the Future of <span className="text-gradient">AI Trading</span>
               </h1>
-
+              
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Join a world-class team of engineers, researchers, and innovators working on cutting-edge execution automation, cryptography, and broker connectivity infrastructure.
+                Join a world-class team of engineers, researchers, and innovators working on cutting-edge AI, cryptography, and decentralized systems.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ const CareersPage: React.FC = () => {
                   <div className="text-center">
                     <div className="text-4xl mb-4">🎯</div>
                     <h3 className="font-semibold text-lg mb-2">Mission-Driven</h3>
-                    <p className="text-gray-300">Democratize access to institutional-grade execution automation technology</p>
+                    <p className="text-gray-300">Democratize access to institutional-grade AI trading technology</p>
                   </div>
                   
                   <div className="text-center">

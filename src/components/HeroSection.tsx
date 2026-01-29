@@ -104,28 +104,28 @@ const HeroSection: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>ReFi.Trading | AI Execution Automation Platform</title>
-        <meta name="description" content="Non-custodial execution automation with broker connectivity, cryptographic risk proofs, and reinforcement-learning automation. Execute user-defined trading rules through an existing broker account. Assets remain in user custody." />
-
+        <title>ReFi.Trading | Wall-Street AI, Radically Accessible</title>
+        <meta name="description" content="Revolutionary AI trading platform with self-custodied execution, zero-knowledge risk proofs, and reinforcement learning agents. Launch institutional-grade trading strategies in minutes while maintaining full control of your assets." />
+        
         {/* Enhanced structured data for homepage */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "ReFi.Trading - AI Execution Automation Platform",
-            "description": "Non-custodial execution automation with broker connectivity, cryptographic risk proofs, and reinforcement-learning automation. Execute user-defined trading rules through an existing broker account.",
+            "name": "ReFi.Trading - AI Trading Platform",
+            "description": "Revolutionary AI trading platform with self-custodied execution, zero-knowledge risk proofs, and reinforcement learning agents.",
             "url": "https://refi.trading",
             "mainEntity": {
               "@type": "SoftwareApplication",
               "name": "ReFi.Trading Platform",
               "applicationCategory": "FinanceApplication",
-              "description": "Non-custodial execution automation with zero-knowledge risk enforcement",
+              "description": "Self-custodied AI trading with zero-knowledge risk enforcement",
               "featureList": [
-                "Reinforcement Learning Automation",
+                "Reinforcement Learning Agents",
                 "Zero-Knowledge Risk Proofs",
-                "Non-Custodial Broker Execution",
+                "Self-Custodied Execution",
                 "Portfolio Analysis",
-                "Rule-Based Order Submission"
+                "Real-time Risk Management"
               ]
             },
             "breadcrumb": {

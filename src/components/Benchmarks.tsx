@@ -60,20 +60,20 @@ const Benchmarks: React.FC = () => {
         <div className="flex flex-col md:flex-row items-end justify-between mb-10 gap-6">
           <div>
             <div className="inline-flex items-center gap-2 px-2 py-1 rounded bg-charcoal-light border border-gray-700 text-[10px] font-mono text-mint uppercase tracking-widest mb-3">
-               Research Backtest, Example Configuration
+               Out-of-Sample Performance (2023-2025)
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">
-              Example Research Configuration
+              Proven in Stress. Efficient in Growth.
             </h2>
             <p className="text-gray-body max-w-xl text-sm">
-              Example results from an internal research configuration used to validate proof-gated execution workflows. Results shown are simulated. ReFi.Trading does not offer investment strategies or recommendations. Users define rules and risk limits. Users decide whether to trade.
+              The Refinity© Strategy delivers institutional-grade risk-adjusted returns, minimizing drawdown while maximizing compounding efficiency.
             </p>
           </div>
 
           <div className="flex items-center gap-6 text-[11px] font-mono text-gray-400 bg-charcoal border border-gray-700 px-4 py-2 rounded">
             <div className="flex flex-col">
                 <span className="flex items-center gap-2 mb-1">
-                    <span className="w-2 h-2 bg-mint"></span> Example Research Configuration
+                    <span className="w-2 h-2 bg-mint"></span> Refinity© Strategy
                 </span>
                 <span className="text-white font-bold ml-4">SHARPE 4.38</span>
             </div>
@@ -253,12 +253,11 @@ const Benchmarks: React.FC = () => {
         <div className="mt-8 pt-6 border-t border-gray-700/50 flex items-start gap-3 text-[9px] text-gray-600 font-sans leading-relaxed max-w-5xl mx-auto">
            <AlertTriangle size={12} className="flex-shrink-0 mt-0.5 text-gray-500" />
            <div>
-              <strong className="text-gray-500 uppercase tracking-wider block mb-1">Simulation, not live trading.</strong>
-              Source: "RF-RL Regime Strategy Portfolio Returns Estimate" (Nov 2025). Data reflects historical out-of-sample simulation (2023-04-18 to 2025-10-17) for an internal research configuration,
+              <strong className="text-gray-500 uppercase tracking-wider block mb-1">Hypothetical Performance Disclaimer</strong>
+              Source: "RF-RL Regime Strategy Portfolio Returns Estimate" (Nov 2025). Data reflects historical out-of-sample performance (2023-04-18 to 2025-10-17) for the Refinity© Strategy portfolio,
               constructed by equal-weighting <strong>292 liquid U.S. equities</strong> selected via fundamental and robustness filters.
               The results are simulated and do not represent actual trading. Past performance is not indicative of future results.
-              ReFi.Trading provides software for execution automation. ReFi.Trading does not offer investment strategies, recommendations, or discretionary management.
-              Users define all trading rules, parameters, and risk limits. The Sharpe Ratio of 4.38 and Max Drawdown of -1.08% are based on daily returns net of estimated trading costs (0.025% daily drag) and risk-free rate (4.25%).
+              The Sharpe Ratio of 4.38 and Max Drawdown of -1.08% are based on daily returns net of estimated trading costs (0.025% daily drag) and risk-free rate (4.25%).
            </div>
         </div>
       </div>
