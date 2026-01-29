@@ -54,7 +54,13 @@ const HeroSection: React.FC = () => {
         <meta itemProp="name" content="Hero Section" />
         <meta itemProp="description" content="Introduction to ReFi.Trading AI trading platform" />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal via-charcoal-deep to-charcoal"></div>
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/Slide8.png)' }}
+          role="img"
+          aria-label="ReFi.Trading platform background"
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/60 to-charcoal/80"></div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto">
