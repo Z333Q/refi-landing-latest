@@ -252,9 +252,9 @@ const PortfolioAnalyzer: React.FC = () => {
                 {/* Email Access Form */}
                 <div className="max-w-md mx-auto">
                   <div className="bg-[#101417]/70 ring-1 ring-[#1b1f24] rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold text-white mb-4">Get Instant Access</h2>
+                    <h2 className="text-2xl font-bold text-white mb-4">Join Early Access List</h2>
                     <p className="text-gray-400 mb-6">
-                      Enter your email to immediately access our portfolio analyzer.
+                      Early access to execution automation workflows and proof-gated risk controls. Portfolio analytics features available during early access.
                     </p>
                     
                     <form onSubmit={handleWaitlistSubmission} className="space-y-4">
@@ -289,7 +289,7 @@ const PortfolioAnalyzer: React.FC = () => {
                     
                     <div className="mt-6 text-center text-sm text-gray-400">
                       <p>
-                        By submitting, you agree to receive occasional updates about our platform. 
+                        By submitting, you agree to receive emails about execution automation, product updates, and platform documentation.
                         We respect your privacy and will never share your information.
                       </p>
                     </div>

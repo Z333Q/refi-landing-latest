@@ -5,21 +5,21 @@ const segments = {
   POWER_TRADERS: {
     label: "Power Traders",
     headline: "Verified execution.",
-    copy: "Automate execution 24/7 without waking up for markets. Keep full control of your strategy.",
+    copy: "Automate execution 24/7 without waking up for markets. Keep full control of your rules and approvals.",
     widget: "Line chart drawing",
-    tag: "Live strategy with verified limits"
+    tag: "Live execution with verified limits"
   },
   LEAN_FUNDS: {
     label: "Lean Funds",
-    headline: "Institutional strategies.",
+    headline: "Institutional workflows.",
     copy: "Scale beyond spreadsheet limitations. Show investors cryptographic proof of risk compliance.",
     widget: "Allocation blocks rising",
     tag: "Risk within limits"
   },
   FAMILY_OFFICES: {
     label: "Family Offices",
-    headline: "Transparent optimization.",
-    copy: "Stop overpaying for opaque black boxes. Get clear, provable portfolio optimization.",
+    headline: "Transparent execution.",
+    copy: "Stop overpaying for opaque black boxes. Get clear, provable execution automation.",
     widget: "Risk bar tightening",
     tag: "Within set risk level"
   }

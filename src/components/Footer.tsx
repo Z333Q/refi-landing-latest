@@ -194,7 +194,14 @@ const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
             </nav>
           ))}
         </div>
-        
+
+        {/* Compliance Disclaimer */}
+        <div className="mt-12 mb-8 p-6 bg-charcoal-lighter/50 border border-gray-700 rounded-lg">
+          <p className="text-xs text-gray-400 leading-relaxed text-center max-w-5xl mx-auto">
+            ReFi.Trading Inc. provides software for trade execution automation. ReFi.Trading Inc. does not act as a financial advisor, investment advisor, broker-dealer, or portfolio manager. ReFi.Trading Inc. does not provide investment advice, recommendations, or discretionary management. Users define all rules, parameters, and risk limits, and retain full responsibility for trading decisions. Assets remain at the user's broker. Orders execute in the user's brokerage account.
+          </p>
+        </div>
+
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 pt-8" role="contentinfo">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

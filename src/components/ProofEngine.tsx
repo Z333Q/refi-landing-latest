@@ -193,7 +193,7 @@ const ProofEngine: React.FC = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className="text-white"
                     >
-                        &gt; MPT Engine: Reducing Equity 60% -&gt; 40%
+                        &gt; Policy Rule: Reduce equity exposure from 60% to 40% per user configuration
                     </motion.div>
 
                     <motion.div

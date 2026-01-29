@@ -103,10 +103,10 @@ const CareersPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Careers | ReFi.Trading - Join the AI Trading Revolution</title>
-        <meta name="description" content="Join ReFi.Trading and help build the future of AI trading. Explore open positions in engineering, cryptography, and infrastructure at our innovative fintech startup." />
+        <title>Careers | ReFi.Trading - Build Execution Automation Infrastructure</title>
+        <meta name="description" content="Join ReFi.Trading and help build execution automation infrastructure. Explore open positions in engineering, cryptography, and infrastructure at our innovative fintech startup." />
         <meta property="og:title" content="Careers | ReFi.Trading" />
-        <meta property="og:description" content="Join ReFi.Trading and help build the future of AI trading. Explore open positions in engineering, cryptography, and infrastructure at our innovative fintech startup." />
+        <meta property="og:description" content="Join ReFi.Trading and help build execution automation infrastructure." />
       </Helmet>
 
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
@@ -120,9 +120,9 @@ const CareersPage: React.FC = () => {
                 <Users className="h-5 w-5 text-mint" />
                 <span className="text-mint font-medium">We're Hiring</span>
               </div>
-              
+
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Build the Future of <span className="text-gradient">AI Trading</span>
+                Build <span className="text-gradient">Execution Automation Infrastructure</span>
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">

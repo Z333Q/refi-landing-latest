@@ -60,20 +60,20 @@ const Benchmarks: React.FC = () => {
         <div className="flex flex-col md:flex-row items-end justify-between mb-10 gap-6">
           <div>
             <div className="inline-flex items-center gap-2 px-2 py-1 rounded bg-charcoal-light border border-gray-700 text-[10px] font-mono text-mint uppercase tracking-widest mb-3">
-               Out-of-Sample Performance (2023-2025)
+               Research Backtest, ReFinity Configuration
             </div>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">
-              Proven in Stress. Efficient in Growth.
+              Example Research Results
             </h2>
             <p className="text-gray-body max-w-xl text-sm">
-              The Refinity© Strategy delivers institutional-grade risk-adjusted returns, minimizing drawdown while maximizing compounding efficiency.
+              Example results from an internal ReFinity Portfolio Rebalancing used to validate proof-gated execution workflows. Results shown are simulated. ReFi.Trading does not offer investment strategies or recommendations. Users define rules and risk limits. Users execute trades via their broker.
             </p>
           </div>
 
           <div className="flex items-center gap-6 text-[11px] font-mono text-gray-400 bg-charcoal border border-gray-700 px-4 py-2 rounded">
             <div className="flex flex-col">
                 <span className="flex items-center gap-2 mb-1">
-                    <span className="w-2 h-2 bg-mint"></span> Refinity© Strategy
+                    <span className="w-2 h-2 bg-mint"></span> ReFinity Configuration
                 </span>
                 <span className="text-white font-bold ml-4">SHARPE 4.38</span>
             </div>

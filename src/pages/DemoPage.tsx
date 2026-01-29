@@ -7,10 +7,10 @@ const DemoPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Schedule a Demo | ReFi.Trading - AI Trading Platform</title>
-        <meta name="description" content="Schedule a personalized demo of ReFi.Trading's AI trading platform. See how our reinforcement learning agents can transform your trading strategy." />
+        <title>Schedule a Demo | ReFi.Trading - AI Execution Automation Platform</title>
+        <meta name="description" content="Review broker-connected execution automation, proof-gated risk enforcement, and operator controls. Users define rules and limits. Orders submit through the user's broker account." />
         <meta property="og:title" content="Schedule a Demo | ReFi.Trading" />
-        <meta property="og:description" content="Schedule a personalized demo of ReFi.Trading's AI trading platform. See how our reinforcement learning agents can transform your trading strategy." />
+        <meta property="og:description" content="Review broker-connected execution automation, proof-gated risk enforcement, and operator controls." />
       </Helmet>
 
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
@@ -24,11 +24,11 @@ const DemoPage: React.FC = () => {
                 <Calendar className="h-5 w-5 text-mint" />
                 <span className="text-mint font-medium">Personalized Demo</span>
               </div>
-              
+
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 See ReFi.Trading in Action
               </h1>
-              
+
               {/* Embedded Video */}
               <div className="mb-8">
                 <div className="relative w-full max-w-4xl mx-auto">
@@ -50,9 +50,9 @@ const DemoPage: React.FC = () => {
                   </a>
                 </div>
               </div>
-              
+
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Schedule a personalized demo with our team to explore how ReFi.Trading's AI agents can transform your trading strategy. No commitment required.
+                Review broker-connected execution automation, proof-gated risk enforcement, and operator controls. Users define rules and limits. Orders submit through the user's broker account.
               </p>
             </div>
 
@@ -68,8 +68,8 @@ const DemoPage: React.FC = () => {
                         <CheckCircle className="h-6 w-6 text-mint" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">Live AI Agent Performance</h3>
-                        <p className="text-gray-300">Watch our ReFinity© AI Agents analyze markets and execute trades in real-time with full transparency.</p>
+                        <h3 className="font-semibold text-lg mb-2">Live Execution Automation Workflow</h3>
+                        <p className="text-gray-300">See order creation, proof gating, and broker submission based on user-configured rules.</p>
                       </div>
                     </div>
 
@@ -78,8 +78,8 @@ const DemoPage: React.FC = () => {
                         <CheckCircle className="h-6 w-6 text-mint" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">zk-VaR Risk Management</h3>
-                        <p className="text-gray-300">See how our zero-knowledge proofs ensure every trade complies with your risk parameters before execution.</p>
+                        <h3 className="font-semibold text-lg mb-2">zk-VaR Risk Enforcement</h3>
+                        <p className="text-gray-300">See how our zero-knowledge proofs block orders outside user-defined limits before execution.</p>
                       </div>
                     </div>
 
@@ -88,8 +88,8 @@ const DemoPage: React.FC = () => {
                         <CheckCircle className="h-6 w-6 text-mint" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">Self-Custodied Trading</h3>
-                        <p className="text-gray-300">Experience how ERC-4337 account abstraction keeps you in full control of your funds while enabling autonomous trading.</p>
+                        <h3 className="font-semibold text-lg mb-2">Non-Custodial Broker Execution</h3>
+                        <p className="text-gray-300">Assets remain at broker. ReFi.Trading submits orders through broker APIs.</p>
                       </div>
                     </div>
 
@@ -99,7 +99,7 @@ const DemoPage: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg mb-2">Portfolio Analytics</h3>
-                        <p className="text-gray-300">Explore our institutional-grade portfolio analyzer with real-time performance metrics and risk analytics.</p>
+                        <p className="text-gray-300">Explore portfolio analytics features with performance metrics and risk calculations.</p>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const DemoPage: React.FC = () => {
                 {/* Testimonial */}
                 <div className="bg-gradient-to-br from-charcoal-lighter to-charcoal rounded-lg p-6 border border-gray-700">
                   <blockquote className="text-gray-300 italic mb-4">
-                    "The demo completely changed my perspective on AI trading. Seeing the real-time risk proofs and self-custodied execution in action was incredible."
+                    "The demo showed impressive controls, proofs, and audit trail. The user-defined constraints and verification workflow gave me confidence in the system."
                   </blockquote>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-mint/20 rounded-full flex items-center justify-center">
@@ -184,15 +184,22 @@ const DemoPage: React.FC = () => {
                       </a>
                     </div>
                   </div>
+
+                  {/* Disclaimer */}
+                  <div className="mt-6 pt-6 border-t border-gray-600">
+                    <p className="text-xs text-gray-400 text-center">
+                      <strong>Disclosure:</strong> ReFi.Trading provides software. No investment advice, no recommendations, no discretionary management.
+                    </p>
+                  </div>
                 </div>
 
                 {/* Additional Info */}
                 <div className="mt-6 bg-charcoal rounded-lg p-6 border border-gray-700">
                   <h4 className="font-semibold mb-3">What to Expect</h4>
                   <ul className="space-y-2 text-sm text-gray-300">
-                    <li>• Live demonstration of AI trading agents</li>
+                    <li>• Live demonstration of execution automation</li>
                     <li>• Q&A session with our technical team</li>
-                    <li>• Discussion of your specific trading needs</li>
+                    <li>• Discussion of your specific workflow needs</li>
                     <li>• Next steps for getting started</li>
                   </ul>
                 </div>

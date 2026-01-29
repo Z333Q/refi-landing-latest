@@ -11,7 +11,7 @@ const features = [
   {
     icon: Sliders,
     title: "You Control Risk",
-    description: "Define your limits. The system optimizes within your specific constraints."
+    description: "Order sizing and order types remain bounded by user-defined constraints. Proof gates block orders outside limits."
   },
   {
     icon: FileCheck,

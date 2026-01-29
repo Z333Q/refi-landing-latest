@@ -47,10 +47,10 @@ const BlogPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Blog | ReFi.Trading - AI Trading Insights</title>
-        <meta name="description" content="Explore the latest insights on AI trading, reinforcement learning, zero-knowledge proofs, and market analysis from the ReFi.Trading team. Deep technical content for traders and developers." />
-        <meta property="og:title" content="Blog | ReFi.Trading - AI Trading Insights" />
-        <meta property="og:description" content="Explore the latest insights on AI trading, reinforcement learning, zero-knowledge proofs, and market analysis from the ReFi.Trading team." />
+        <title>Blog | ReFi.Trading - Execution Automation Insights</title>
+        <meta name="description" content="Educational content on execution automation, broker APIs, proofs, controls, and platform architecture. No investment advice. ReFi.Trading provides software for execution automation." />
+        <meta property="og:title" content="Blog | ReFi.Trading - Execution Automation Insights" />
+        <meta property="og:description" content="Educational content on execution automation, broker APIs, proofs, controls, and platform architecture." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://refi.trading/blog" />
         <link rel="preload" as="image" href={posts[0]?.image} />
@@ -124,6 +124,11 @@ const BlogPage: React.FC = () => {
               {t('blog.title')}
             </h1>
             <p className="text-xl text-gray-300">{t('blog.subtitle')}</p>
+            <div className="mt-6 p-4 bg-charcoal-lighter/50 border border-gray-700 rounded-lg">
+              <p className="text-xs text-gray-400">
+                Educational content. No investment advice. ReFi.Trading provides software for execution automation.
+              </p>
+            </div>
           </header>
 
           <section 
