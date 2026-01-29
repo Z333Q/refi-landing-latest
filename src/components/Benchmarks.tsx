@@ -97,7 +97,7 @@ const Benchmarks: React.FC = () => {
         </div>
 
         <div className="w-full flex justify-between mt-4 text-[10px] text-gray-500 px-4">
-          <span>*Backtested on US Equities Basket (Tech/Healthcare/Finance)</span>
+          <span>Example results from an internal research configuration used to validate proof-gated execution workflows. Users define rules and risk limits. Users decide whether to trade.</span>
           <span className="flex items-center gap-4">
             <span className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-mint"></div> ReFi Smart Basket</span>
             <span className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-gray-500"></div> S&P 500 Index</span>
