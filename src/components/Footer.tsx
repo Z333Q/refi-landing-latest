@@ -195,6 +195,19 @@ const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
           ))}
         </div>
         
+        {/* Regulatory Disclaimer */}
+        <div className="border-t border-gray-800 pt-8 pb-6">
+          <div className="bg-charcoal-light/50 border border-gray-700/50 rounded-lg p-6 mb-6">
+            <h4 className="text-white font-semibold mb-3 text-sm">Important Disclosure</h4>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              ReFi.Trading Inc. provides software for trade execution automation. ReFi.Trading Inc. does not act as a financial advisor, investment advisor, broker-dealer, or portfolio manager. ReFi.Trading Inc. does not provide investment advice, recommendations, or discretionary management. Users define all rules, parameters, and risk limits, and retain full responsibility for trading decisions. Assets remain at the user's broker. Orders execute in the user's brokerage account.
+            </p>
+            <p className="text-xs text-gray-400 leading-relaxed mt-3">
+              <strong className="text-gray-300">Software subscription, not advisory fees.</strong> No AUM fees. No performance fees.
+            </p>
+          </div>
+        </div>
+
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 pt-8" role="contentinfo">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
@@ -202,31 +215,31 @@ const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
               <p className="text-gray-500 text-sm" itemProp="copyrightNotice">
                 &copy; {currentYear} ReFi.Trading. All rights reserved.
               </p>
-              
+
               <div className="flex items-center space-x-1 text-xs text-gray-600">
                 <span>Built with</span>
                 <span className="text-mint">♥</span>
                 <span>for traders worldwide</span>
               </div>
             </div>
-            
+
             <div className="flex flex-wrap justify-center gap-6">
-              <button 
-                onClick={() => onPolicyClick('privacy')} 
+              <button
+                onClick={() => onPolicyClick('privacy')}
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View privacy policy"
               >
                 Privacy Policy
               </button>
-              <button 
-                onClick={() => onPolicyClick('terms')} 
+              <button
+                onClick={() => onPolicyClick('terms')}
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View terms of service"
               >
                 Terms of Service
               </button>
-              <button 
-                onClick={() => onPolicyClick('cookies')} 
+              <button
+                onClick={() => onPolicyClick('cookies')}
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View cookie policy"
               >

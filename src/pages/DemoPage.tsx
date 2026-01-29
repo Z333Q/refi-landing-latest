@@ -7,10 +7,10 @@ const DemoPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Schedule a Demo | ReFi.Trading - AI Trading Platform</title>
-        <meta name="description" content="Schedule a personalized demo of ReFi.Trading's AI trading platform. See how our reinforcement learning agents can transform your trading strategy." />
+        <title>Schedule a Demo | ReFi.Trading - AI Execution Automation Platform</title>
+        <meta name="description" content="Review broker-connected execution automation, proof-gated risk enforcement, and operator controls. Users define rules and limits. Orders submit through the user's broker account." />
         <meta property="og:title" content="Schedule a Demo | ReFi.Trading" />
-        <meta property="og:description" content="Schedule a personalized demo of ReFi.Trading's AI trading platform. See how our reinforcement learning agents can transform your trading strategy." />
+        <meta property="og:description" content="Review broker-connected execution automation, proof-gated risk enforcement, and operator controls. Users define rules and limits." />
       </Helmet>
 
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
@@ -52,7 +52,7 @@ const DemoPage: React.FC = () => {
               </div>
               
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Schedule a personalized demo with our team to explore how ReFi.Trading's AI agents can transform your trading strategy. No commitment required.
+                Review broker-connected execution automation, proof-gated risk enforcement, and operator controls. Users define rules and limits. Orders submit through the user's broker account. No commitment required.
               </p>
             </div>
 
@@ -68,8 +68,8 @@ const DemoPage: React.FC = () => {
                         <CheckCircle className="h-6 w-6 text-mint" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">Live AI Agent Performance</h3>
-                        <p className="text-gray-300">Watch our ReFinity© AI Agents analyze markets and execute trades in real-time with full transparency.</p>
+                        <h3 className="font-semibold text-lg mb-2">Live Execution Automation Workflow</h3>
+                        <p className="text-gray-300">See order creation, proof gating, and broker submission based on user-configured rules.</p>
                       </div>
                     </div>
 
@@ -79,7 +79,7 @@ const DemoPage: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg mb-2">zk-VaR Risk Management</h3>
-                        <p className="text-gray-300">See how our zero-knowledge proofs ensure every trade complies with your risk parameters before execution.</p>
+                        <p className="text-gray-300">See how zero-knowledge proofs block orders outside user-defined limits before execution.</p>
                       </div>
                     </div>
 
@@ -88,8 +88,8 @@ const DemoPage: React.FC = () => {
                         <CheckCircle className="h-6 w-6 text-mint" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">Self-Custodied Trading</h3>
-                        <p className="text-gray-300">Experience how ERC-4337 account abstraction keeps you in full control of your funds while enabling autonomous trading.</p>
+                        <h3 className="font-semibold text-lg mb-2">Non-Custodial Broker Execution</h3>
+                        <p className="text-gray-300">Assets remain at broker. ReFi.Trading submits orders through broker APIs. User maintains full custody and control.</p>
                       </div>
                     </div>
 
@@ -99,7 +99,7 @@ const DemoPage: React.FC = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg mb-2">Portfolio Analytics</h3>
-                        <p className="text-gray-300">Explore our institutional-grade portfolio analyzer with real-time performance metrics and risk analytics.</p>
+                        <p className="text-gray-300">Explore portfolio analytics tools with performance metrics and risk monitoring.</p>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const DemoPage: React.FC = () => {
                 {/* Testimonial */}
                 <div className="bg-gradient-to-br from-charcoal-lighter to-charcoal rounded-lg p-6 border border-gray-700">
                   <blockquote className="text-gray-300 italic mb-4">
-                    "The demo completely changed my perspective on AI trading. Seeing the real-time risk proofs and self-custodied execution in action was incredible."
+                    "Seeing the proof gates, operator controls, and audit trail in the demo was impressive. The control layer architecture gives real transparency."
                   </blockquote>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-mint/20 rounded-full flex items-center justify-center">
@@ -141,6 +141,13 @@ const DemoPage: React.FC = () => {
                       <div className="text-sm text-gray-400">Portfolio Manager</div>
                     </div>
                   </div>
+                </div>
+
+                {/* Disclosure */}
+                <div className="bg-charcoal-light border border-gray-700 rounded-lg p-4">
+                  <p className="text-xs text-gray-400 leading-relaxed">
+                    <strong className="text-gray-300">Disclosure:</strong> ReFi.Trading provides software. No investment advice, no recommendations, no discretionary management. Users define all rules, parameters, and risk limits.
+                  </p>
                 </div>
               </div>
 
@@ -190,9 +197,9 @@ const DemoPage: React.FC = () => {
                 <div className="mt-6 bg-charcoal rounded-lg p-6 border border-gray-700">
                   <h4 className="font-semibold mb-3">What to Expect</h4>
                   <ul className="space-y-2 text-sm text-gray-300">
-                    <li>• Live demonstration of AI trading agents</li>
+                    <li>• Live demonstration of execution automation agents</li>
                     <li>• Q&A session with our technical team</li>
-                    <li>• Discussion of your specific trading needs</li>
+                    <li>• Discussion of your specific execution needs</li>
                     <li>• Next steps for getting started</li>
                   </ul>
                 </div>

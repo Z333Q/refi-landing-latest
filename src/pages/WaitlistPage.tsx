@@ -45,10 +45,10 @@ const WaitlistPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Join the Waitlist | ReFi.Trading - AI Trading Platform</title>
-        <meta name="description" content="Join the ReFi.Trading waitlist to get early access to our revolutionary AI trading platform with reinforcement learning agents and zero-knowledge risk management." />
-        <meta property="og:title" content="Join the Waitlist | ReFi.Trading" />
-        <meta property="og:description" content="Join the ReFi.Trading waitlist to get early access to our revolutionary AI trading platform with reinforcement learning agents and zero-knowledge risk management." />
+        <title>Join Early Access | ReFi.Trading - AI Execution Automation Platform</title>
+        <meta name="description" content="Early access to non-custodial broker-connected execution automation with cryptographic risk verification. Users define rules and limits. Assets remain at user broker." />
+        <meta property="og:title" content="Join Early Access | ReFi.Trading" />
+        <meta property="og:description" content="Early access to non-custodial broker-connected execution automation with cryptographic risk verification. Users define rules and limits." />
       </Helmet>
 
       <div className="min-h-screen bg-charcoal pt-24 pb-16">
@@ -62,11 +62,11 @@ const WaitlistPage: React.FC = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                Join the <span className="text-gradient">AI Trading</span> Revolution
+                Join Early Access for <span className="text-gradient">Execution Automation</span>
               </h1>
-              
+
               <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Be among the first to experience institutional-grade AI trading with self-custodied execution, zero-knowledge risk proofs, and reinforcement learning agents.
+                Early access to non-custodial broker-connected execution automation with cryptographic risk verification. Users define rules and limits. Assets remain at user broker.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ const WaitlistPage: React.FC = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-lg mb-2">Priority Access</h3>
-                          <p className="text-gray-300">Be the first to access our AI trading platform when it launches, ahead of the general public.</p>
+                          <p className="text-gray-300">Priority access to execution automation workflows when the platform launches.</p>
                         </div>
                       </div>
 
@@ -94,7 +94,7 @@ const WaitlistPage: React.FC = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-lg mb-2">Exclusive Updates</h3>
-                          <p className="text-gray-300">Receive insider updates on development progress, new features, and beta testing opportunities.</p>
+                          <p className="text-gray-300">Receive updates on development progress, new features, and beta testing opportunities.</p>
                         </div>
                       </div>
 
@@ -103,8 +103,8 @@ const WaitlistPage: React.FC = () => {
                           <CheckCircle className="h-6 w-6 text-mint" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-lg mb-2">Special Pricing</h3>
-                          <p className="text-gray-300">Lock in early adopter pricing and exclusive discounts on platform fees and premium features.</p>
+                          <h3 className="font-semibold text-lg mb-2">Early Software Subscription Pricing</h3>
+                          <p className="text-gray-300">Lock in early adopter software subscription pricing. Software subscription, not advisory fees.</p>
                         </div>
                       </div>
 
@@ -113,7 +113,7 @@ const WaitlistPage: React.FC = () => {
                           <CheckCircle className="h-6 w-6 text-mint" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-lg mb-2">Direct Feedback Channel</h3>
+                          <h3 className="font-semibold text-lg mb-2">Direct Product Feedback</h3>
                           <p className="text-gray-300">Shape the platform's development with direct access to our team and influence on new features.</p>
                         </div>
                       </div>
@@ -167,7 +167,13 @@ const WaitlistPage: React.FC = () => {
                           <span className="text-sm">{error}</span>
                         </div>
                       )}
-                      
+
+                      <div className="bg-charcoal-light border border-gray-700 rounded-lg p-4">
+                        <p className="text-xs text-gray-400 leading-relaxed">
+                          <strong className="text-gray-300">Disclosure:</strong> ReFi.Trading provides software. No investment advice, no recommendations, no discretionary management. Users define all rules, parameters, and risk limits.
+                        </p>
+                      </div>
+
                       <button
                         type="submit"
                         disabled={isSubmitting || !email}
@@ -199,9 +205,9 @@ const WaitlistPage: React.FC = () => {
                 <div className="w-20 h-20 bg-mint/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="h-10 w-10 text-mint" />
                 </div>
-                <h2 className="text-3xl font-bold mb-4">Welcome to the Waitlist!</h2>
+                <h2 className="text-3xl font-bold mb-4">Welcome to Early Access!</h2>
                 <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                  Thank you for joining the ReFi.Trading waitlist. You'll be among the first to know when we launch our revolutionary AI trading platform.
+                  Thank you for joining the ReFi.Trading early access list. You'll be among the first to know when we launch execution automation workflows.
                 </p>
                 
                 <div className="bg-charcoal-lighter rounded-lg p-6 max-w-md mx-auto">
