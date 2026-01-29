@@ -102,8 +102,8 @@ const Benchmarks: React.FC = () => {
                 </div>
              </div>
 
-             <div className="flex-grow relative mt-16 mr-12 ml-4 mb-8">
-                <div className="absolute inset-0 border-l border-b border-gray-700/50 grid grid-cols-4 grid-rows-4">
+             <div className="flex-grow relative mt-16 ml-4 mb-8 pr-12">
+                <div className="absolute left-0 right-12 top-0 bottom-0 border-l border-b border-gray-700/50 grid grid-cols-4 grid-rows-4">
                     {[...Array(4)].map((_, i) => (
                         <div key={i} className="border-t border-gray-700/30 w-full h-full"></div>
                     ))}
@@ -114,7 +114,7 @@ const Benchmarks: React.FC = () => {
                     </div>
                 </div>
 
-                <svg className="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox={`0 0 ${chartWidth} ${chartHeight}`}>
+                <svg className="absolute left-0 right-12 top-0 bottom-0 w-auto h-full overflow-visible" preserveAspectRatio="none" viewBox={`0 0 ${chartWidth} ${chartHeight}`}>
                    <defs>
                       <linearGradient id="gradientMint" x1="0" y1="0" x2="0" y2="1">
                          <stop offset="0%" stopColor="#0CD4A0" stopOpacity="0.15" />
@@ -191,7 +191,7 @@ const Benchmarks: React.FC = () => {
                    />
                 </svg>
 
-                <div className="absolute -right-10 top-0 bottom-0 flex flex-col justify-between text-[9px] text-gray-500 font-mono text-right pointer-events-none h-full py-0">
+                <div className="absolute right-0 top-0 bottom-0 flex flex-col justify-between text-[9px] text-gray-500 font-mono text-right pointer-events-none h-full py-0">
                    <span>+80%</span>
                    <span>+60%</span>
                    <span>+40%</span>
@@ -200,7 +200,7 @@ const Benchmarks: React.FC = () => {
                 </div>
              </div>
 
-             <div className="flex justify-between px-4 mr-10 pb-2 text-[9px] text-gray-500 font-mono uppercase tracking-wider border-t border-gray-700/50 pt-2">
+             <div className="flex justify-between pl-4 pr-16 pb-2 text-[9px] text-gray-500 font-mono uppercase tracking-wider border-t border-gray-700/50 pt-2">
                 <span>Apr '23</span>
                 <span>Oct '23</span>
                 <span>Apr '24</span>
