@@ -2,31 +2,24 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const segments = {
-  POWER_TRADERS: {
-    label: "Power Traders",
-    headline: "Verified execution.",
-    copy: "Automate execution 24/7 without waking up for markets. Keep full control of your rules and approvals.",
-    widget: "Line chart drawing",
-    tag: "Live execution with verified limits"
-  },
   LEAN_FUNDS: {
-    label: "Lean Funds",
+    label: "Investment Managers",
     headline: "Institutional workflows.",
-    copy: "Scale beyond spreadsheet limitations. Show investors cryptographic proof of risk compliance.",
+    copy: "Execution automation software for teams managing multiple portfolios. Users define all trading rules and risk limits. Show stakeholders cryptographic proof of compliance with user-configured constraints.",
     widget: "Allocation blocks rising",
-    tag: "Risk within limits"
+    tag: "User-defined risk constraints"
   },
   FAMILY_OFFICES: {
-    label: "Family Offices",
+    label: "Wealth Management",
     headline: "Transparent execution.",
-    copy: "Stop overpaying for opaque black boxes. Get clear, provable execution automation.",
+    copy: "Broker-connected execution automation for sophisticated investors. Define your own rules and limits. Assets remain at your broker. Orders execute only within user-configured constraints verified by cryptographic proofs.",
     widget: "Risk bar tightening",
-    tag: "Within set risk level"
+    tag: "Orders within user limits"
   }
 };
 
 const UserSegments: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'POWER_TRADERS' | 'LEAN_FUNDS' | 'FAMILY_OFFICES'>('POWER_TRADERS');
+  const [activeTab, setActiveTab] = useState<'LEAN_FUNDS' | 'FAMILY_OFFICES'>('LEAN_FUNDS');
 
   return (
     <section id="technology" className="py-24 px-6 max-w-6xl mx-auto">
@@ -82,25 +75,11 @@ const UserSegments: React.FC = () => {
                  </div>
                )}
 
-               {activeTab === 'POWER_TRADERS' && (
-                 <svg className="w-full h-full text-mint" viewBox="0 0 100 50" preserveAspectRatio="none">
-                   <motion.path
-                      d="M0,50 L20,40 L40,45 L60,20 L80,30 L100,10"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 1 }}
-                   />
-                 </svg>
-               )}
-
                {activeTab === 'FAMILY_OFFICES' && (
                  <div className="w-full px-8">
                     <div className="flex justify-between text-xs text-gray-500 mb-1">
                         <span>Risk</span>
-                        <span>Limit</span>
+                        <span>User Limit</span>
                     </div>
                     <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
                         <motion.div

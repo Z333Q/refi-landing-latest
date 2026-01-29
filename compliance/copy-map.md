@@ -42,11 +42,16 @@ This document tracks all copywriting changes made to reposition ReFi.Trading as 
 
 | Location | Original | New Copy | Rationale |
 |----------|----------|----------|-----------|
-| Power Traders - Copy | "Keep full control of your strategy." | "Keep full control of your rules and approvals." | User-controlled rules, not strategies |
-| Power Traders - Tag | "Live strategy with verified limits" | "Live execution with verified limits" | Execution, not strategy |
+| Power Traders | (entire segment) | REMOVED | Removed to avoid targeting individual traders |
+| Lean Funds - Label | "Lean Funds" | "Investment Managers" | Professional institutional terminology |
 | Lean Funds - Headline | "Institutional strategies." | "Institutional workflows." | Workflows, not strategies |
+| Lean Funds - Copy | "Scale beyond spreadsheet limitations. Show investors cryptographic proof of risk compliance." | "Execution automation software for teams managing multiple portfolios. Users define all trading rules and risk limits. Show stakeholders cryptographic proof of compliance with user-configured constraints." | Software provision, user authority, user-configured constraints |
+| Lean Funds - Tag | "Risk within limits" | "User-defined risk constraints" | User-defined emphasis |
+| Family Offices - Label | "Family Offices" | "Wealth Management" | Broader, more compliant terminology |
 | Family Offices - Headline | "Transparent optimization." | "Transparent execution." | Execution automation, not optimization |
-| Family Offices - Copy | "Get clear, provable portfolio optimization." | "Get clear, provable execution automation." | Tool language |
+| Family Offices - Copy | "Stop overpaying for opaque black boxes. Get clear, provable execution automation." | "Broker-connected execution automation for sophisticated investors. Define your own rules and limits. Assets remain at your broker. Orders execute only within user-configured constraints verified by cryptographic proofs." | Non-custodial clarity, user authority, broker execution |
+| Family Offices - Tag | "Within set risk level" | "Orders within user limits" | User limits, not system-set levels |
+| Family Offices - Widget Label | "Limit" | "User Limit" | User-defined limits |
 
 ### Trust Section (TrustSection.tsx)
 
