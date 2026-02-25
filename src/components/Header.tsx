@@ -153,7 +153,7 @@ const Header: React.FC = () => {
               </button>
               
               {/* Dropdown Menu */}
-              <div 
+              <div
                 className="absolute right-0 mt-2 w-56 bg-charcoal-light border border-gray-700 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                 role="menu"
                 aria-label="Get started options"
@@ -169,7 +169,7 @@ const Header: React.FC = () => {
                     <div className="font-medium">{t('nav.joinWaitlist')}</div>
                     <div className="text-sm text-gray-400">Get early access to AI trading</div>
                   </a>
-                  
+
                   <a
                     href="/demo"
                     className="block px-4 py-3 text-white hover:bg-mint/10 hover:text-mint transition-colors border-b border-gray-700"
@@ -178,7 +178,16 @@ const Header: React.FC = () => {
                     <div className="font-medium">{t('nav.bookDemo')}</div>
                     <div className="text-sm text-gray-400">15-min personalized demo</div>
                   </a>
-                  
+
+                  <a
+                    href="/investor-form"
+                    className="block px-4 py-3 text-white hover:bg-mint/10 hover:text-mint transition-colors border-b border-gray-700"
+                    role="menuitem"
+                  >
+                    <div className="font-medium">Investor Form</div>
+                    <div className="text-sm text-gray-400">Investment opportunities</div>
+                  </a>
+
                   <a
                     href="/partners"
                     className="block px-4 py-3 text-white hover:bg-mint/10 hover:text-mint transition-colors border-b border-gray-700"
@@ -187,7 +196,7 @@ const Header: React.FC = () => {
                     <div className="font-medium">{t('nav.partners')}</div>
                     <div className="text-sm text-gray-400">Strategic partnerships</div>
                   </a>
-                  
+
                   <a
                     href="/careers"
                     className="block px-4 py-3 text-white hover:bg-mint/10 hover:text-mint transition-colors"
@@ -286,6 +295,13 @@ const Header: React.FC = () => {
                     aria-label="Book a demo"
                   >
                     {t('nav.bookDemo')}
+                  </a>
+                  <a
+                    href="/investor-form"
+                    className="block text-gray-300 hover:text-mint transition-colors duration-200 text-center py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Investor Form
                   </a>
                   <a
                     href="/partners"

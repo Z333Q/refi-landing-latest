@@ -47,6 +47,7 @@ const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
       links: [
         { label: 'Join Waitlist', href: '/waitlist', route: true, highlight: true },
         { label: 'Book Demo', href: '/demo', route: true },
+        { label: 'Investor Form', href: '/investor-form', route: true },
         { label: 'Request Access', href: '#contact' },
       ]
     }

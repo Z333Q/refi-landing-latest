@@ -160,7 +160,7 @@ const InvestorFormPage: React.FC = () => {
 
               <div>
                 <strong className="block mb-1">DATA AND CONTACT</strong>
-                <p>By submitting this form you consent to ReFi Trading Inc storing and processing your information for investor outreach and communications by email or phone. See our Privacy Policy at <a href="/legal/privacy" className="text-mint hover:underline">refi.trading/legal/privacy</a>. You can withdraw consent at any time.</p>
+                <p>By submitting this form you consent to ReFi Trading Inc storing and processing your information for investor outreach and communications by email or phone. See our Privacy Policy at <a href="https://refi.trading/legal/privacy" className="text-mint hover:underline">refi.trading/legal/privacy</a>. You can withdraw consent at any time.</p>
               </div>
 
               <div>
