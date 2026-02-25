@@ -5,11 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocalization } from '../lib/l10n';
 import { imageUrls } from '../lib/imageUrls';
 
-interface FooterProps {
-  onPolicyClick: (policy: string) => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
+const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
   const l10n = useLocalization(i18n.language);
   const currentYear = new Date().getFullYear();
@@ -219,27 +215,27 @@ const Footer: React.FC<FooterProps> = ({ onPolicyClick }) => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-6">
-              <button 
-                onClick={() => onPolicyClick('privacy')} 
+              <Link
+                to="/legal/privacy"
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View privacy policy"
               >
                 Privacy Policy
-              </button>
-              <button 
-                onClick={() => onPolicyClick('terms')} 
+              </Link>
+              <Link
+                to="/legal/terms"
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View terms of service"
               >
                 Terms of Service
-              </button>
-              <button 
-                onClick={() => onPolicyClick('cookies')} 
+              </Link>
+              <Link
+                to="/legal/cookies"
                 className="text-gray-500 hover:text-mint text-sm transition-all duration-300"
                 aria-label="View cookie policy"
               >
                 Cookie Policy
-              </button>
+              </Link>
             </div>
           </div>
         </div>

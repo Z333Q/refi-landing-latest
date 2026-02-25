@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
@@ -24,9 +24,11 @@ import WaitlistPage from './pages/WaitlistPage';
 import PartnersPage from './pages/PartnersPage';
 import CareersPage from './pages/CareersPage';
 import InvestorFormPage from './pages/InvestorFormPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
+import CookiePolicyPage from './pages/CookiePolicyPage';
 import Footer from './components/Footer';
 import ConvAIWidget from './components/ConvAIWidget';
-import PolicyPage from './components/PolicyPage';
 import { getFaqSchema } from './components/SeoFaq';
 
 // Memoize particle interface to prevent recreations
@@ -41,21 +43,6 @@ interface Particle {
   lines: HTMLDivElement[];
 }
 
-// Move policies outside component to prevent recreations
-const POLICIES = {
-  privacy: {
-    title: "Privacy Policy",
-    content: "ReFi.Trading respects your privacy and complies with the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We collect only necessary information (e.g., name, email) to communicate with users and partners. You have the right to access, correct, or delete your data. We never sell your personal data. For all data-related requests, email hello@refi.trading."
-  },
-  terms: {
-    title: "Terms of Service",
-    content: "By using ReFi.Trading, you agree to abide by applicable laws and regulations. All content is for informational purposes and not financial advice. We do not guarantee uptime or accuracy. Use of ReFi.Trading is at your own risk, and all liability limitations apply to the maximum extent permitted by law."
-  },
-  cookies: {
-    title: "Cookie Policy",
-    content: "ReFi.Trading uses cookies and similar tracking technologies in accordance with GDPR and CCPA. Cookies help us analyze site traffic and improve the user experience. No personally identifiable data is stored in cookies. You can manage cookie preferences through your browser or via our cookie banner. Continued use of the site indicates your consent."
-  }
-};
 
 // Reduce particle count and optimize animation
 const PARTICLE_COUNT = 30; // Reduced from 75
@@ -63,16 +50,10 @@ const CONNECTION_DISTANCE = 100; // Reduced from 150
 const ANIMATION_FRAME_SKIP = 2; // Skip frames for better performance
 
 function App() {
-  const [currentPolicy, setCurrentPolicy] = useState<string | null>(null);
   const particlesRef = useRef<Particle[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number>();
   const frameCountRef = useRef<number>(0);
-
-  // Memoize policy handler to prevent recreations
-  const handlePolicyClick = useCallback((policy: string) => {
-    setCurrentPolicy(policy);
-  }, []);
 
   // Optimize particle system
   useEffect(() => {
@@ -245,26 +226,6 @@ function App() {
     };
   }, []);
 
-  // Memoize policy component to prevent recreations
-  if (currentPolicy) {
-    const policy = POLICIES[currentPolicy as keyof typeof POLICIES];
-    return (
-      <div className="min-h-screen bg-charcoal text-white">
-        <Helmet>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: getFaqSchema(),
-            }}
-          />
-        </Helmet>
-        <Header />
-        <PolicyPage title={policy.title} content={policy.content} />
-        <Footer onPolicyClick={handlePolicyClick} />
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-charcoal text-white overflow-x-hidden relative">
       {/* Skip link for accessibility */}
@@ -318,8 +279,11 @@ function App() {
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/investor-form" element={<InvestorFormPage />} />
+          <Route path="/legal/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/legal/terms" element={<TermsOfServicePage />} />
+          <Route path="/legal/cookies" element={<CookiePolicyPage />} />
         </Routes>
-        <Footer onPolicyClick={handlePolicyClick} />
+        <Footer />
       </div>
       
       {/* ElevenLabs ConvAI Widget */}
