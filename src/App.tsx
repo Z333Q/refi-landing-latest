@@ -23,6 +23,7 @@ import DemoPage from './pages/DemoPage';
 import WaitlistPage from './pages/WaitlistPage';
 import PartnersPage from './pages/PartnersPage';
 import CareersPage from './pages/CareersPage';
+import InvestorFormPage from './pages/InvestorFormPage';
 import Footer from './components/Footer';
 import ConvAIWidget from './components/ConvAIWidget';
 import PolicyPage from './components/PolicyPage';
@@ -316,6 +317,7 @@ function App() {
           <Route path="/waitlist" element={<WaitlistPage />} />
           <Route path="/partners" element={<PartnersPage />} />
           <Route path="/careers" element={<CareersPage />} />
+          <Route path="/investor-form" element={<InvestorFormPage />} />
         </Routes>
         <Footer onPolicyClick={handlePolicyClick} />
       </div>
