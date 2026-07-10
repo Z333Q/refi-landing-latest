@@ -103,7 +103,7 @@
       },
       "brokers": {
         "question": "支持哪些经纪商？",
-        "answer": "我们目前支持Interactive Brokers、TD Ameritrade、E*TRADE、Charles Schwab和Fidelity。根据用户需求和技术兼容性添加其他经纪商集成。"
+        "answer": "我们目前支持Interactive Brokers、Alpaca、E*TRADE、Charles Schwab和Fidelity。根据用户需求和技术兼容性添加其他经纪商集成。"
       },
       "agents": {
         "question": "代理如何决定交易？",

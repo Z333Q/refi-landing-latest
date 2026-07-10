@@ -16,10 +16,10 @@ const ActionModulesSection: React.FC = () => {
   const [demoError, setDemoError] = useState('');
 
   const brokers = [
+    'Alpaca',
     'Interactive Brokers',
-    'TD Ameritrade',
-    'E*TRADE',
     'Charles Schwab',
+    'E*TRADE',
     'Fidelity',
     'Other'
   ];

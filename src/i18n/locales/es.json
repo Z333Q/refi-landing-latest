@@ -105,7 +105,7 @@
       },
       "brokers": {
         "question": "¿Qué brókers son compatibles?",
-        "answer": "Actualmente soportamos Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab y Fidelity. Se agregan integraciones adicionales de brókers basadas en la demanda del usuario y compatibilidad técnica."
+        "answer": "Actualmente soportamos Interactive Brokers, Alpaca, E*TRADE, Charles Schwab y Fidelity. Se agregan integraciones adicionales de brókers basadas en la demanda del usuario y compatibilidad técnica."
       },
       "agents": {
         "question": "¿Cómo deciden operar los agentes?",

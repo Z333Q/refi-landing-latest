@@ -103,7 +103,7 @@
       },
       "brokers": {
         "question": "कौन से ब्रोकर समर्थित हैं?",
-        "answer": "हम वर्तमान में Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, और Fidelity का समर्थन करते हैं। उपयोगकर्ता मांग और तकनीकी संगतता के आधार पर अतिरिक्त ब्रोकर एकीकरण जोड़े जाते हैं।"
+        "answer": "हम वर्तमान में Interactive Brokers, Alpaca, E*TRADE, Charles Schwab, और Fidelity का समर्थन करते हैं। उपयोगकर्ता मांग और तकनीकी संगतता के आधार पर अतिरिक्त ब्रोकर एकीकरण जोड़े जाते हैं।"
       },
       "agents": {
         "question": "एजेंट ट्रेड करने का निर्णय कैसे लेते हैं?",

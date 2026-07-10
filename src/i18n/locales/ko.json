@@ -103,7 +103,7 @@
       },
       "brokers": {
         "question": "어떤 브로커가 지원되나요?",
-        "answer": "현재 Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, Fidelity를 지원합니다. 사용자 수요와 기술적 호환성에 따라 추가 브로커 통합이 추가됩니다."
+        "answer": "현재 Interactive Brokers, Alpaca, E*TRADE, Charles Schwab, Fidelity를 지원합니다. 사용자 수요와 기술적 호환성에 따라 추가 브로커 통합이 추가됩니다."
       },
       "agents": {
         "question": "에이전트는 어떻게 거래를 결정하나요?",

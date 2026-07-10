@@ -105,7 +105,7 @@
       },
       "brokers": {
         "question": "Which brokers are supported?",
-        "answer": "We currently support Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
+        "answer": "We currently support Interactive Brokers, Alpaca, E*TRADE, Charles Schwab, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
       },
       "agents": {
         "question": "How do agents decide to trade?",

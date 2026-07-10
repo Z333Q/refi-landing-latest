@@ -12,10 +12,10 @@ const FinalActionSection: React.FC = () => {
   const [error, setError] = useState('');
 
   const brokers = [
+    'Alpaca',
     'Interactive Brokers',
-    'TD Ameritrade', 
-    'E*TRADE',
     'Charles Schwab',
+    'E*TRADE',
     'Fidelity',
     'Other'
   ];

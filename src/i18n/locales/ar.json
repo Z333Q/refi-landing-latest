@@ -103,7 +103,7 @@
       },
       "brokers": {
         "question": "أي وسطاء مدعومون؟",
-        "answer": "نحن ندعم حالياً Interactive Brokers، TD Ameritrade، E*TRADE، Charles Schwab، و Fidelity. تضاف تكاملات وسطاء إضافية بناءً على طلب المستخدمين والتوافق التقني."
+        "answer": "نحن ندعم حالياً Interactive Brokers، Alpaca، E*TRADE، Charles Schwab، و Fidelity. تضاف تكاملات وسطاء إضافية بناءً على طلب المستخدمين والتوافق التقني."
       },
       "agents": {
         "question": "كيف يقرر الوكلاء التداول؟",

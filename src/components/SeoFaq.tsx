@@ -21,7 +21,7 @@ export const getFaqSchema = () => {
       "name": "Which brokers are supported?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We currently support Interactive Brokers, TD Ameritrade, E*TRADE, Charles Schwab, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
+        "text": "We currently support Alpaca, Interactive Brokers, Charles Schwab, E*TRADE, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
       }
     },
     {

@@ -103,7 +103,7 @@
       },
       "brokers": {
         "question": "どのブローカーがサポートされていますか？",
-        "answer": "現在、Interactive Brokers、TD Ameritrade、E*TRADE、Charles Schwab、Fidelityをサポートしています。ユーザーの需要と技術的互換性に基づいて追加のブローカー統合が追加されます。"
+        "answer": "現在、Interactive Brokers、Alpaca、E*TRADE、Charles Schwab、Fidelityをサポートしています。ユーザーの需要と技術的互換性に基づいて追加のブローカー統合が追加されます。"
       },
       "agents": {
         "question": "エージェントはどのように取引を決定しますか？",
