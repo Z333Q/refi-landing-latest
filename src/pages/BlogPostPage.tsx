@@ -68,8 +68,10 @@ const BlogPostPage: React.FC = () => {
       <Helmet>
         <title>{`${post.title} | ReFi.Trading`}</title>
         <meta name="description" content={post.excerpt} />
+        <link rel="canonical" href={`https://refi.trading/blog/${post.slug}`} />
         <meta property="og:title" content={`${post.title} | ReFi.Trading`} />
         <meta property="og:description" content={post.excerpt} />
+        <meta property="og:url" content={`https://refi.trading/blog/${post.slug}`} />
         <meta property="og:image" content={post.image} />
         <meta property="article:published_time" content={post.date} />
         <meta property="article:tag" content={post.tags.join(', ')} />
