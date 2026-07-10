@@ -108,8 +108,8 @@
         "answer": "We currently support Interactive Brokers, Alpaca, E*TRADE, Charles Schwab, and Fidelity. Additional broker integrations are added based on user demand and technical compatibility."
       },
       "agents": {
-        "question": "How do agents decide to trade?",
-        "answer": "Our ReFinity© agents use ensemble reinforcement learning (PPO, TD3, RVI-Q) with reward centering and MetaOptimize tuning. They continuously adapt to market conditions while respecting your predefined risk parameters."
+        "question": "How does the platform decide to trade?",
+        "answer": "ReFinity© uses ensemble reinforcement learning (PPO, TD3, RVI-Q) to detect market-regime shifts, and a Modern Portfolio Theory allocator to decide positions against your risk profile. RL classifies the regime; MPT decides the trade — the two roles are separate by design."
       },
       "risk": {
         "question": "What risk controls are enforced?",

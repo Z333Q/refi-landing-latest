@@ -196,7 +196,7 @@ const RegimeSimulationChart = () => {
           fontWeight="bold"
           letterSpacing="0.5px"
         >
-          RL AGENT: SECTOR ROTATION
+          REGIME DETECTION: SECTOR ROTATION
         </text>
       </motion.g>
 

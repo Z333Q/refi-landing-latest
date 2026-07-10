@@ -15,8 +15,8 @@ const ArchitectureSection: React.FC = () => {
   const components: ArchitectureComponent[] = [
     {
       id: 'agents',
-      title: 'ReFinity© RL Agents',
-      description: 'Ensemble reinforcement learning with reward centering and MetaOptimize hyperparameter tuning. Our agents continuously adapt to market conditions through distributed training and inference.',
+      title: 'ReFinity© Regime Detection',
+      description: 'Ensemble reinforcement learning classifies market regimes in real time; a Modern Portfolio Theory allocator then decides positions against your risk profile. RL detects the regime shift, MPT decides the trade.',
       icon: <Brain className="h-6 w-6 text-mint" />
     },
     {
@@ -87,7 +87,7 @@ const ArchitectureSection: React.FC = () => {
               >
                 <div className="text-center p-2">
                   <Brain className={`h-6 w-6 ${activeComponent === 'agents' ? 'text-mint' : 'text-gray-400'} mx-auto mb-1`} />
-                  <p className={`font-medium ${activeComponent === 'agents' ? 'text-mint' : 'text-gray-300'}`}>RL Agents</p>
+                  <p className={`font-medium ${activeComponent === 'agents' ? 'text-mint' : 'text-gray-300'}`}>Regime Detection</p>
                 </div>
               </div>
 

@@ -37,8 +37,8 @@ const InnovationsSection: React.FC = () => {
     },
     {
       id: 'refinity',
-      title: 'ReFinity© RL Agents',
-      description: 'Ensemble PPO, TD3, RVI-Q agents optimized for average-reward, volatility responsiveness, and centered returns via MetaOptimize tuning.',
+      title: 'ReFinity© Regime Detection',
+      description: 'Ensemble PPO, TD3, RVI-Q classifiers identify market regimes; a Modern Portfolio Theory allocator then decides positions against your risk profile.',
       icon: <Brain className="w-6 h-6 text-mint" />,
       stats: [
         { value: 3, label: 'RL Algorithms' },

@@ -5,7 +5,7 @@ export const getFaqSchema = () => {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "name": "ReFi.Trading Frequently Asked Questions",
-  "description": "Common questions about ReFi.Trading AI trading platform, reinforcement learning agents, and zero-knowledge risk management",
+  "description": "Common questions about ReFi.Trading: algorithmic strategies, reinforcement-learning regime detection, Modern Portfolio Theory allocation, and zero-knowledge risk management.",
   "url": "https://refi.trading/#faq",
   "mainEntity": [
     {
@@ -29,7 +29,7 @@ export const getFaqSchema = () => {
       "name": "How do AI agents decide when to trade?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Our ReFinity© agents use ensemble reinforcement learning (PPO, TD3, RVI-Q) with reward centering and MetaOptimize tuning. They continuously adapt to market conditions while respecting your predefined risk parameters."
+        "text": "ReFinity© uses ensemble reinforcement learning (PPO, TD3, RVI-Q) to detect market-regime shifts, and a Modern Portfolio Theory allocator to decide positions against your risk profile. RL classifies the regime; MPT decides the trade — the two roles are separate by design."
       }
     },
     {
@@ -42,10 +42,10 @@ export const getFaqSchema = () => {
     },
     {
       "@type": "Question",
-      "name": "Why use reinforcement learning instead of traditional algorithms?",
+      "name": "How does reinforcement learning fit into the strategy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Reinforcement learning adapts to changing market conditions in real-time, unlike static rule-based systems that break during regime shifts. Our RL agents continuously learn and optimize their strategies based on market feedback."
+        "text": "Reinforcement learning is used for regime detection: classifiers identify when the market moves between low-volatility, trending, and stress regimes. A Modern Portfolio Theory allocator then decides positions against your risk profile. RL detects the regime shift; MPT decides the trade — the two roles are separate by design."
       }
     },
     {

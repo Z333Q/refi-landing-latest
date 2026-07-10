@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
               className="text-xl text-gray-300 max-w-xl leading-relaxed mb-10"
               itemProp="description"
             >
-              Institutional-grade algorithmic strategies with self-custodied execution and Reinforcement Learning Agents.
+              Institutional-grade algorithmic strategies with self-custodied execution. Reinforcement learning detects market-regime shifts; a Modern Portfolio Theory allocator decides trades against your risk profile.
             </motion.p>
 
             <motion.div
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
               className="flex flex-wrap justify-center gap-4 mb-8"
             >
               <FeaturePill icon={<Shield size={16} />} text="Self-Custodial" />
-              <FeaturePill icon={<Brain size={16} />} text="Reinforcement Learning Agent" />
+              <FeaturePill icon={<Brain size={16} />} text="RL Regime Detection · MPT Allocator" />
               <FeaturePill icon={<Globe size={16} />} text="Global Access" />
             </motion.div>
 
