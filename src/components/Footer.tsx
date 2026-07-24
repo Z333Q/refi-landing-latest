@@ -41,6 +41,11 @@ const Footer: React.FC = () => {
     {
       title: 'Get Started',
       links: [
+        // Launch-gated game CTA — same gate as the header entry; see
+        // refi-us-sec-ia/docs/system-integration-map.md.
+        ...(import.meta.env.VITE_SHOW_GAME_CTA === 'true'
+          ? [{ label: 'Play ReFi Alpha', href: 'https://play.refi.trading', external: true, highlight: true }]
+          : []),
         { label: 'Join Waitlist', href: '/waitlist', route: true, highlight: true },
         { label: 'Book Demo', href: '/demo', route: true },
         { label: 'Investor Form', href: '/investor-form', route: true },

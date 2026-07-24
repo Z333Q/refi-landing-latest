@@ -42,7 +42,14 @@ const Header: React.FC = () => {
     { title: t('nav.team'), href: '#team', sectionId: 'team' },
     { title: t('nav.faq'), href: '#faq', sectionId: 'faq' },
     { title: t('nav.blog'), href: '/blog', isRoute: true },
-    { title: t('nav.analyzer'), href: '/analyzer/index.html', isExternal: true }
+    { title: t('nav.analyzer'), href: '/analyzer/index.html', isExternal: true },
+    // Launch-gated game CTA. Flipping VITE_SHOW_GAME_CTA=true is the launch
+    // act, gated on the game compliance pass (RLS owner-scoping, §62 labels)
+    // and the game's retro-landing PR being deployed — see
+    // refi-us-sec-ia/docs/system-integration-map.md.
+    ...(import.meta.env.VITE_SHOW_GAME_CTA === 'true'
+      ? [{ title: 'Play ReFi Alpha', href: 'https://play.refi.trading', isExternal: true }]
+      : [])
   ];
 
   const isActiveLink = (link: typeof navLinks[0]) => {
