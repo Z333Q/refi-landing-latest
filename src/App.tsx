@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import AllInBanner from './components/AllInBanner';
 import Benchmarks from './components/Benchmarks';
 import HowItWorksSection from './components/HowItWorksSection';
 import UserSegments from './components/UserSegments';
@@ -254,6 +255,7 @@ function App() {
           <Route path="/" element={
             <div id="main-content" role="main">
             <main>
+              <AllInBanner />
               <HeroSection />
               <Benchmarks />
               <HowItWorksSection />
