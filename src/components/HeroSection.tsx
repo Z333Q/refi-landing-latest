@@ -1,9 +1,25 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Zap, Link, Globe, Brain, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
+const HERO_SLIDES = [
+  '/Slide8.png',
+  '/refi-allin-2026-linkedin.png',
+  '/Slide3.png',
+  '/Slide10.png',
+];
+
 const HeroSection: React.FC = () => {
+  const [slide, setSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -54,13 +70,33 @@ const HeroSection: React.FC = () => {
         <meta itemProp="name" content="Hero Section" />
         <meta itemProp="description" content="Introduction to ReFi.Trading AI trading platform" />
 
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(/Slide8.png)' }}
-          role="img"
-          aria-label="ReFi.Trading platform background"
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/80 via-charcoal/60 to-charcoal/80"></div>
+        <div className="absolute inset-0" role="img" aria-label="ReFi.Trading platform background">
+          <AnimatePresence mode="sync">
+            <motion.div
+              key={slide}
+              initial={{ opacity: 0, scale: 1.08 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ opacity: { duration: 1.2 }, scale: { duration: 6, ease: 'linear' } }}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url(${HERO_SLIDES[slide]})` }}
+            />
+          </AnimatePresence>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/85 via-charcoal/70 to-charcoal/85"></div>
+
+        <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
+          {HERO_SLIDES.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setSlide(i)}
+              aria-label={`Show slide ${i + 1}`}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                i === slide ? 'w-8 bg-mint' : 'w-2 bg-white/40 hover:bg-white/70'
+              }`}
+            />
+          ))}
+        </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto">

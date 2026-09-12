@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, CalendarDays, MapPin, Sparkles } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
@@ -13,7 +13,7 @@ const AllInBanner: React.FC = () => {
       <div className="absolute -left-24 top-16 h-64 w-64 rounded-full bg-mint/10 blur-3xl" />
 
       <div className="container relative mx-auto px-4 md:px-6">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1fr_300px] lg:gap-16">
+        <div className="mx-auto max-w-4xl">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 12 }}
@@ -77,23 +77,6 @@ const AllInBanner: React.FC = () => {
               <span className="text-sm text-gray-400">#ALLIN2026 · Montréal</span>
             </motion.div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.18 }}
-            className="relative mx-auto w-full max-w-[300px] overflow-hidden rounded-2xl border border-mint/25 bg-charcoal shadow-2xl shadow-mint/10"
-          >
-            <img
-              src="/refi-allin-2026-linkedin.png"
-              alt="ReFi.Trading at ALL IN 2026 in Montréal, September 16–17"
-              className="block aspect-square w-full object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 flex items-center gap-2 bg-charcoal/90 px-4 py-3 text-xs font-medium text-gray-200 backdrop-blur-sm">
-              <MapPin size={14} className="text-mint" aria-hidden="true" />
-              Palais des Congrès, Montréal
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
