@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Shield, Zap, Link, Globe, Brain, ChevronRight } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
-const HERO_SLIDES = [
-  '/Slide8.png',
-  '/refi-allin-2026-linkedin.png',
-  '/Slide3.png',
-  '/Slide10.png',
-];
+const HERO_SLIDES = ['/Slide8.png', '/Slide3.png', '/Slide10.png'];
 
 const HeroSection: React.FC = () => {
   const [slide, setSlide] = useState(0);
@@ -71,17 +66,14 @@ const HeroSection: React.FC = () => {
         <meta itemProp="description" content="Introduction to ReFi.Trading AI trading platform" />
 
         <div className="absolute inset-0" role="img" aria-label="ReFi.Trading platform background">
-          <AnimatePresence mode="sync">
-            <motion.div
-              key={slide}
-              initial={{ opacity: 0, scale: 1.08 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ opacity: { duration: 1.2 }, scale: { duration: 6, ease: 'linear' } }}
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{ backgroundImage: `url(${HERO_SLIDES[slide]})` }}
+          {HERO_SLIDES.map((src, i) => (
+            <div
+              key={src}
+              aria-hidden="true"
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out"
+              style={{ backgroundImage: `url(${src})`, opacity: i === slide ? 1 : 0 }}
             />
-          </AnimatePresence>
+          ))}
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/85 via-charcoal/70 to-charcoal/85"></div>
 
