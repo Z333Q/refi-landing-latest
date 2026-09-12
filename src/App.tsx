@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AllInBanner from './components/AllInBanner';
+import BeatTheMachineSection from './components/BeatTheMachineSection';
 import Benchmarks from './components/Benchmarks';
 import HowItWorksSection from './components/HowItWorksSection';
 import UserSegments from './components/UserSegments';
@@ -259,6 +260,7 @@ function App() {
               <HeroSection />
               <Benchmarks />
               <HowItWorksSection />
+              <BeatTheMachineSection />
               <PartnerLogosSection />
               <UserSegments />
               <TrustSection />

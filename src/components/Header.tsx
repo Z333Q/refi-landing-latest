@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Gamepad2 } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher';
 import { imageUrls } from '../lib/imageUrls';
@@ -142,7 +142,19 @@ const Header: React.FC = () => {
             
             {/* Language Switcher */}
             <LanguageSwitcher />
-            
+
+            {/* Play the Game */}
+            <a
+              href="https://game.refi.trading"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 border border-mint/40 text-mint hover:bg-mint hover:text-charcoal font-semibold px-4 py-2 rounded-md transition-colors duration-200 whitespace-nowrap"
+              aria-label="Play the trading game"
+            >
+              <Gamepad2 size={16} aria-hidden="true" />
+              Play
+            </a>
+
             {/* CTA Dropdown */}
             <div className="relative group">
               <button className="bg-mint hover:bg-mint-dark text-charcoal font-semibold px-5 py-2 rounded-md transition-colors duration-200 whitespace-nowrap flex items-center gap-1">
@@ -278,6 +290,17 @@ const Header: React.FC = () => {
               <div className="border-t border-gray-700 pt-6 mt-6 w-full max-w-xs">
                 <div className="text-center text-gray-400 text-sm mb-4">{t('nav.getStarted')}</div>
                 <div className="space-y-3">
+                  <a
+                    href="https://game.refi.trading"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 border-2 border-mint/50 text-mint hover:bg-mint hover:text-charcoal font-semibold px-6 py-3 rounded-md transition-colors duration-200 text-center"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-label="Play the trading game"
+                  >
+                    <Gamepad2 size={18} aria-hidden="true" />
+                    Play the Game
+                  </a>
                   <a
                     href="https://forms.gle/rr74yAhAM2MiGTVi9"
                     target="_blank"
