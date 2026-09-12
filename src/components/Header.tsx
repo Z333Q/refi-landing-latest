@@ -93,7 +93,7 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav
-            className="hidden lg:flex items-center gap-x-6 xl:gap-x-8"
+            className="hidden xl:flex items-center gap-x-5 2xl:gap-x-7 ml-8 text-sm"
             role="navigation"
             aria-label="Main navigation"
             itemScope
@@ -148,7 +148,7 @@ const Header: React.FC = () => {
               href="https://game.refi.trading"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 border border-mint/40 text-mint hover:bg-mint hover:text-charcoal font-semibold px-4 py-2 rounded-md transition-colors duration-200 whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 border border-mint/40 text-mint hover:bg-mint hover:text-charcoal font-semibold px-3 py-2 rounded-md transition-colors duration-200 whitespace-nowrap"
               aria-label="Play the trading game"
             >
               <Gamepad2 size={16} aria-hidden="true" />
@@ -157,7 +157,7 @@ const Header: React.FC = () => {
 
             {/* CTA Dropdown */}
             <div className="relative group">
-              <button className="bg-mint hover:bg-mint-dark text-charcoal font-semibold px-5 py-2 rounded-md transition-colors duration-200 whitespace-nowrap flex items-center gap-1">
+              <button className="bg-mint hover:bg-mint-dark text-charcoal font-semibold px-4 py-2 rounded-md transition-colors duration-200 whitespace-nowrap flex items-center gap-1">
                 {t('nav.getStarted')}
                 <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -224,7 +224,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Navigation Toggle */}
           <button 
-            className="lg:hidden z-50 text-white"
+            className="xl:hidden z-50 text-white"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
@@ -235,7 +235,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Navigation Menu */}
           <div 
-            className={`fixed inset-0 bg-charcoal-light lg:hidden flex flex-col justify-center items-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}
+            className={`fixed inset-0 bg-charcoal-light xl:hidden flex flex-col justify-center items-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}
             id="mobile-menu"
             role="dialog"
             aria-modal="true"
