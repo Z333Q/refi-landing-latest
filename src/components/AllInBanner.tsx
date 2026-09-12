@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowUpRight, CalendarDays, Sparkles } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const AllInBanner: React.FC = () => {
@@ -67,13 +66,15 @@ const AllInBanner: React.FC = () => {
               transition={{ delay: 0.32 }}
               className="mt-8 flex flex-wrap items-center gap-5"
             >
-              <Link
-                to="/demo"
+              <a
+                href="https://app.swapcard.com/event/all-in-2026/exhibitor/RXhoaWJpdG9yXzI1MDc1NDY=?bookmark=true&source=scan"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-md bg-mint px-5 py-3 font-semibold text-charcoal transition-colors hover:bg-mint-light"
               >
                 Set a time to meet
                 <ArrowUpRight size={17} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
-              </Link>
+              </a>
               <span className="text-sm text-gray-400">#ALLIN2026 · Montréal</span>
             </motion.div>
           </div>
