@@ -93,7 +93,7 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav
-            className="hidden md:flex items-center space-x-8"
+            className="hidden lg:flex items-center gap-x-6 xl:gap-x-8"
             role="navigation"
             aria-label="Main navigation"
             itemScope
@@ -224,7 +224,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Navigation Toggle */}
           <button 
-            className="md:hidden z-50 text-white"
+            className="lg:hidden z-50 text-white"
             onClick={toggleMenu}
             aria-label="Toggle menu"
             aria-expanded={isMenuOpen}
@@ -235,7 +235,7 @@ const Header: React.FC = () => {
 
           {/* Mobile Navigation Menu */}
           <div 
-            className={`fixed inset-0 bg-charcoal-light md:hidden flex flex-col justify-center items-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}
+            className={`fixed inset-0 bg-charcoal-light lg:hidden flex flex-col justify-center items-center transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}
             id="mobile-menu"
             role="dialog"
             aria-modal="true"
